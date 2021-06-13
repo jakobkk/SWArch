@@ -153,6 +153,12 @@
     <ClInclude Include="UI.h" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\BusInt\BusInt.vcxproj">
+      <Project>{6fa818cf-0916-484f-8eaf-68fd782ebeee}</Project>
+    </ProjectReference>
+    <ProjectReference Include="..\Core\Core.vcxproj">
+      <Project>{5dc81d63-ec79-4d3c-be0f-7b36fd069376}</Project>
+    </ProjectReference>
     <ProjectReference Include="..\UILibrary\UILibrary.vcxproj">
       <Project>{1155e21a-d324-4653-bb87-68046cdee6da}</Project>
     </ProjectReference>

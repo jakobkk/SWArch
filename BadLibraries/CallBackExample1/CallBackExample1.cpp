@@ -9,10 +9,10 @@ int main()
 {
     std::cout << "Hello World!\n";
     setMyFunc(CoolStuff);
-    //setMyFunc2(CoolStuff2);
+    setMyFunc2(CoolStuff2);
 
     SomeLowLevelFunc();
-
+    return 0;
 }
 
 // Run program: Ctrl + F5 or Debug > Start Without Debugging menu

@@ -158,15 +158,18 @@
     <None Include="cpp.hint" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="BI.h" />
     <ClInclude Include="framework.h" />
     <ClInclude Include="LinkedList.h" />
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="BI.cpp" />
     <ClCompile Include="Core.cpp" />
     <ClCompile Include="dllmain.cpp" />
     <ClCompile Include="LinkedList.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\BusInt\BusInt.vcxproj">
+      <Project>{6fa818cf-0916-484f-8eaf-68fd782ebeee}</Project>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

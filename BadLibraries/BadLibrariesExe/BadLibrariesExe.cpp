@@ -2,9 +2,11 @@
 //
 
 #include "..\Core\LinkedList.h"
+#include "..\BusInt\BusInt.h"
 #include <iostream>
 #include <string>
 #include <cmath>
+#include <assert.h>
 #include <iomanip>
 #include <sstream>
 #include "..\UILibrary\UI.h"
@@ -49,17 +51,15 @@ int main(int argc, char** argv)
 
 void RunTests()
 {
-	//ArrayBasedLinkedList linkedList;
-	//Assert::IsTrue(linkedList.isEmpty());
+	ArrayBasedLinkedList linkedList;
+	assert(linkedList.isEmpty());
 
-	//Assert::AreEqual(std::string(""), linkedList.toString());
+	assert(std::string("")== linkedList.toString());
 
-	//linkedList.clear();
-	//Assert::IsTrue(linkedList.isEmpty());
+	linkedList.clear();
+	assert(linkedList.isEmpty());
 
-	//ArrayBasedLinkedList linkedList;
-	//Assert::IsTrue(linkedList.isEmpty());
-	//Assert::IsTrue(linkedList.add(1));
+	assert(!linkedList.add(1));
 
 	//Assert::IsFalse(linkedList.isEmpty());
 

@@ -1,0 +1,2 @@
+#define BUSINT_API __declspec(dllexport)
+#define BUSINT_API __declspec(dllimport)
