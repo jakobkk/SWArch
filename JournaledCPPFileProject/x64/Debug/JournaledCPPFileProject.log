@@ -1,0 +1,5 @@
+﻿  SampleJournal.cpp
+C:\Users\polek\source\repos\AutomationAPI\JournaledCPPFileProject\SampleJournal.cpp(9,51): warning C4129: 'w': unrecognized character escape sequence
+C:\Users\polek\source\repos\AutomationAPI\JournaledCPPFileProject\SampleJournal.cpp(9,51): warning C4129: 's': unrecognized character escape sequence
+C:\Users\polek\source\repos\AutomationAPI\JournaledCPPFileProject\SampleJournal.cpp(9,51): warning C4129: 'S': unrecognized character escape sequence
+  JournaledCPPFileProject.vcxproj -> C:\Users\polek\source\repos\AutomationAPI\x64\Debug\JournaledCPPFileProject.exe
