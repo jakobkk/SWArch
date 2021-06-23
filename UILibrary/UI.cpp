@@ -27,7 +27,7 @@ void UI::StartGUILoop()
 	//Setup Journaling File
 	SetJournalingLangauge(JournalingLanguage::CPP);
 	//StartJournaling("C:\\Users\\polek\\source\\repos\\AutomationAPI\\JournaledCPPFileProject\\SampleJournal.cpp");
-	StartJournaling("C:\\Users\\jakob\\Documents\\SampleJournal.cpp");
+	StartJournaling("C:\\Users\\jakob\\Desktop\\SWArch\\SWArch\\SampleJournal.cpp");
 
 	PartFile * partFile = MakePartUI("d:\\\\workdir\\\\someDir\\\\SomeName.part");
 	AddWidgetFeatureToPartUI(partFile, true, 10);
