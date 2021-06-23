@@ -128,12 +128,14 @@ bool IsJournaling()
 
 void JournalIntInParam(int value, std::string paramName)
 {
-
+    JournalCallParamDataInteger* journalCallParamData = new JournalCallParamDataInteger(paramName, JournalCallParamData::ParameterMetaType::INPUT, value);
+    currentCall->AddParameter(journalCallParamData);
 }
 
 void JournalBoolInParam(bool value, std::string paramName)
 {
-
+    JournalCallParamDataBoolean* journalCallParamData = new JournalCallParamDataBoolean(paramName, JournalCallParamData::ParameterMetaType::INPUT, value);
+    currentCall->AddParameter(journalCallParamData);
 }
 
 void JournalStringInParam(std::string value, std::string paramName)
@@ -272,6 +274,7 @@ void JournalCallData::Journal()
     for (int i = 0; i < m_params.size(); i++)
     {
         m_params[i]->Journal();
+//        if ((i + 1) < m_params.size()) journalContents << ",";
     }
     journalContents << ");" << std::endl;
 
@@ -319,6 +322,65 @@ void JournalCallParamDataString::Journal()
 
 
 }
+
+JournalCallParamDataInteger::JournalCallParamDataInteger(std::string paramName,
+    ParameterMetaType paramType, int value) :
+    JournalCallParamData(paramName, paramType, JournalCallParamData::ParameterBasicType::STRING), m_value(value)
+{
+
+}
+
+void JournalCallParamDataInteger::Journal()
+{
+    if (this->m_paramType == JournalCallParamData::ParameterMetaType::INPUT)
+    {
+
+        journalContents << std::to_string(m_value);
+    }
+    else if (this->m_paramType == JournalCallParamData::ParameterMetaType::OUTPUT)
+    {
+        throw new std::exception("NIY ");
+    }
+    else // RETURN
+    {
+        throw new std::exception("NIY");
+    }
+
+
+}
+
+
+JournalCallParamDataBoolean::JournalCallParamDataBoolean(std::string paramName,
+    ParameterMetaType paramType, bool value) :
+    JournalCallParamData(paramName, paramType, JournalCallParamData::ParameterBasicType::BOOLEAN), m_value(value)
+{
+
+}
+
+void JournalCallParamDataBoolean::Journal()
+{
+    if (this->m_paramType == JournalCallParamData::ParameterMetaType::INPUT)
+    {
+        //There is a bug here, all \ need to be replaced with \\ 
+        if(m_value){
+            journalContents << "true";
+        }
+        else journalContents << "false";
+        journalContents << ",";
+    }
+    else if (this->m_paramType == JournalCallParamData::ParameterMetaType::OUTPUT)
+    {
+        throw new std::exception("NIY ");
+    }
+    else // RETURN
+    {
+        throw new std::exception("NIY");
+    }
+
+
+}
+
+
 
 JournalCallParamDataClass::JournalCallParamDataClass(std::string paramName, ParameterMetaType paramType,
     GuidObject* classObject, std::string className) :
