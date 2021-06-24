@@ -304,9 +304,29 @@ void JournalCallParamDataString::Journal()
 {
     if (this->m_paramType == JournalCallParamData::ParameterMetaType::INPUT)
     {
-        //There is a bug here, all \ need to be replaced with \\
+        // Want to make sure it doesn't already have '\\'
+        char* tmp;
+        size_t len = m_value.length();
+        int j = 0;
 
-        journalContents << "\"" << m_value << "\"" ;
+        tmp = (char*)malloc(size_t(len * 2));
+        if (!tmp) {
+            printf("Failed to malloc\n");
+            return;
+        }
+
+        for (int i = 0; i < len; i++) {
+            tmp[j++] = m_value[i];
+            // Make sure it's a single quote and not at the end of the string
+            if ((int)m_value[i] == 92 && i + 1 != len && (int)m_value[i + 1] != 92) {
+                tmp[j++] = '\\';
+            }
+        }
+        tmp[j] = '\0';
+        std::string m_value(tmp);
+
+        journalContents << "\"" << m_value << "\"";
+        free(tmp);
     }
     else if (this->m_paramType == JournalCallParamData::ParameterMetaType::OUTPUT)
     {
