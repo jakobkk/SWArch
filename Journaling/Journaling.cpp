@@ -321,7 +321,7 @@ void JournalCallParamDataString::Journal()
         for (int i = 0; i < len; i++) {
             tmp[j++] = m_value[i];
             // Make sure it's a single quote and not at the end of the string
-            if ((int)m_value[i] == 92 && i + 1 != len && (int)m_value[i + 1] != 92) {
+            if ((int)m_value[i] == 92 && i + 1 != len && (int)m_value[i + 1] != 92 && (int)m_value[i - 1] != 92) {
                 tmp[j++] = '\\';
             }
         }
