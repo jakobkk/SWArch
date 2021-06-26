@@ -1,7 +1,0 @@
-﻿  SampleJournal.cpp
-C:\Users\jakob\Desktop\SWArch\SWArch\JournaledCPPFileProject\SampleJournal.cpp(9,51): warning C4129: 'w': unrecognized character escape sequence
-C:\Users\jakob\Desktop\SWArch\SWArch\JournaledCPPFileProject\SampleJournal.cpp(9,51): warning C4129: 's': unrecognized character escape sequence
-C:\Users\jakob\Desktop\SWArch\SWArch\JournaledCPPFileProject\SampleJournal.cpp(9,51): warning C4129: 'S': unrecognized character escape sequence
-  Source.cpp
-  Generating Code...
-  JournaledCPPFileProject.vcxproj -> C:\Users\jakob\Desktop\SWArch\SWArch\x64\Debug\JournaledCPPFileProject.exe
