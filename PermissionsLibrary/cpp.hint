@@ -1,0 +1,2 @@
+#define PERMISSIONSLIBRARY_API __declspec(dllexport)
+#define PERMISSIONSLIBRARY_API __declspec(dllimport)
