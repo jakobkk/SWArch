@@ -9,6 +9,7 @@
 #else
 #define CORE_API __declspec(dllimport)
 #endif
+#include "../SystemsLibrary/SystemsLibrary.h"
 
 // This class is exported from the dll
 class CORE_API CCore {
@@ -20,3 +21,16 @@ public:
 extern CORE_API int nCore;
 
 CORE_API int fnCore(void);
+
+class CORE_API Node {
+public:
+	Node();
+	Node(void* incoming);
+	Node(void* incoming, Node* incoming_next_node);
+	virtual ~Node();
+	void write_to_fake_db();
+
+private:
+	void* obj;
+	Node* next;
+};

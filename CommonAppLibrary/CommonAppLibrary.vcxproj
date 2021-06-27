@@ -157,6 +157,14 @@
     <ClCompile Include="CommonAppLibrary.cpp" />
     <ClCompile Include="dllmain.cpp" />
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\LoggingLibrary\LoggingLibrary.vcxproj">
+      <Project>{d0c0d4a1-e2b9-446f-ab15-d51e1a5a37cb}</Project>
+    </ProjectReference>
+    <ProjectReference Include="..\PermissionsLibrary\PermissionsLibrary.vcxproj">
+      <Project>{5d730f18-a801-4d6d-a212-417645b86e59}</Project>
+    </ProjectReference>
+  </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
   </ImportGroup>

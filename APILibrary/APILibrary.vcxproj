@@ -122,6 +122,7 @@
       <SDLCheck>true</SDLCheck>
       <PreprocessorDefinitions>_DEBUG;APILIBRARY_EXPORTS;_WINDOWS;_USRDLL;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
+      <AdditionalIncludeDirectories>..\Core;..\CommonAppLibrary</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <SubSystem>Windows</SubSystem>
@@ -158,6 +159,12 @@
     <ClCompile Include="dllmain.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\CommonAppLibrary\CommonAppLibrary.vcxproj">
+      <Project>{bf68a81b-be0d-4239-ba1c-88601064de6e}</Project>
+    </ProjectReference>
+    <ProjectReference Include="..\Core\Core.vcxproj">
+      <Project>{afdf72e7-21d9-4f0c-8cd0-ccdcec49da7f}</Project>
+    </ProjectReference>
     <ProjectReference Include="..\LoggingLibrary\LoggingLibrary.vcxproj">
       <Project>{d0c0d4a1-e2b9-446f-ab15-d51e1a5a37cb}</Project>
     </ProjectReference>

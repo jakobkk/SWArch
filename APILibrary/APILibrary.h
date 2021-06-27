@@ -11,8 +11,9 @@
 #endif
 
 #include <string>
-#include "../LoggingLibrary/LoggingLibrary.h"
-#include "../PermissionsLibrary/PermissionsLibrary.h"
+//#include "../LoggingLibrary/LoggingLibrary.h"
+//#include "../PermissionsLibrary/PermissionsLibrary.h"
+#include "../CommonAppLibrary/CommonAppLibrary.h"
 
 // This class is exported from the dll
 class APILIBRARY_API CAPILibrary {
@@ -33,5 +34,6 @@ public:
 	APIHandler();
 	int HandleArgs(std::string str);
 	int call_object(std::string type);
+	void create_node(Operation* op);
 };
 

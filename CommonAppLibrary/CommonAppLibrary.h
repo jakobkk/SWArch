@@ -20,3 +20,35 @@ public:
 extern COMMONAPPLIBRARY_API int nCommonAppLibrary;
 
 COMMONAPPLIBRARY_API int fnCommonAppLibrary(void);
+
+#include "../LoggingLibrary/LoggingLibrary.h"
+#include "../PermissionsLibrary/PermissionsLibrary.h"
+#include "../Core/Core.h"
+
+enum COMMONAPPLIBRARY_API op_types { 
+	defensive, 
+	offensive, 
+	incident_response, 
+	data_collection 
+};
+
+class COMMONAPPLIBRARY_API Operation
+{
+public:
+	PermissionObject* per;
+	Logging* log;
+
+	Operation();
+	Operation(std::string op);
+	Operation(op_types op);
+	op_types get_op_type();
+	void set_op_type(std::string op);
+	void set_op_type(op_types op);
+	op_types str_to_op_type(std::string op);
+	// TODO call a core function
+
+private:
+	op_types op_type;
+};
+
+

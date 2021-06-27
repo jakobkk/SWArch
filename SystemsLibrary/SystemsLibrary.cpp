@@ -19,3 +19,16 @@ CSystemsLibrary::CSystemsLibrary()
 {
     return;
 }
+
+FakeDb::FakeDb() {
+
+}
+
+void FakeDb::write_to_db(void* obj) {
+    std::cout << "Write to db not implemented" << std::endl;
+}
+
+std::string FakeDb::read_from_db() {
+    std::cout << "Read from db not implemented" << std::endl;
+    return "NIY";
+}

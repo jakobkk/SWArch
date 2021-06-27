@@ -10,6 +10,8 @@
 #define SYSTEMSLIBRARY_API __declspec(dllimport)
 #endif
 
+#include <iostream>
+
 // This class is exported from the dll
 class SYSTEMSLIBRARY_API CSystemsLibrary {
 public:
@@ -20,3 +22,10 @@ public:
 extern SYSTEMSLIBRARY_API int nSystemsLibrary;
 
 SYSTEMSLIBRARY_API int fnSystemsLibrary(void);
+
+class SYSTEMSLIBRARY_API FakeDb {
+public:
+	FakeDb();
+	void write_to_db(void* obj);
+	std::string read_from_db();
+};

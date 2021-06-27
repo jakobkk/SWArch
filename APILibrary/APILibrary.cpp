@@ -32,6 +32,7 @@ int APIHandler::HandleArgs(std::string str) {
         log->log_event("Does not have correct permissions for handle args");
         return 1;
     }
+    return 0;
 }
 
 int APIHandler::call_object(std::string type) {
@@ -40,6 +41,17 @@ int APIHandler::call_object(std::string type) {
         log->log_event("Does not have correct permissions for call object");
         return 1;
     }
-    // TODO call Appliation layer
+    Operation* op = new Operation("data_collection");
+    create_node(op);
+    return 0;
+}
 
+void APIHandler::create_node(Operation* op) {
+    log->log_event("create node from op");
+    if (!per->has_permission(1)) {
+        log->log_event("Does not have correct permissions for create node from op");
+        return;
+    }
+    Node node = Node(op);
+    node.write_to_fake_db();
 }
