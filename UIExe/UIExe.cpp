@@ -3,6 +3,7 @@
 
 #include <iostream>
 #include "..\UILibrary\UILibrary.h"
+#include <boost/locale.hpp>
 
 int main()
 {
