@@ -40,3 +40,4 @@ bool PermissionObject::has_permission(int permission) {
     }
     return res;
 }
+
