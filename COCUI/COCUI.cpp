@@ -3,6 +3,7 @@
 
 #include "framework.h"
 #include "COCUI.h"
+#include "../APILibrary/APILibrary.h"
 
 #define MAX_LOADSTRING 100
 
@@ -25,8 +26,7 @@ int APIENTRY wWinMain(_In_ HINSTANCE hInstance,
     UNREFERENCED_PARAMETER(hPrevInstance);
     UNREFERENCED_PARAMETER(lpCmdLine);
 
-    // TODO: Place code here.
-
+    APIHandler api = APIHandler();
     // Initialize global strings
     LoadStringW(hInstance, IDS_APP_TITLE, szTitle, MAX_LOADSTRING);
     LoadStringW(hInstance, IDC_COCUI, szWindowClass, MAX_LOADSTRING);
@@ -134,9 +134,39 @@ LRESULT CALLBACK WndProc(HWND hWnd, UINT message, WPARAM wParam, LPARAM lParam)
             case IDM_ABOUT:
                 DialogBox(hInst, MAKEINTRESOURCE(IDD_ABOUTBOX), hWnd, About);
                 break;
+            case ID_FILE_FIXOILPIPELINE:
+                //system(".\AutomationAPIExe.exe poop poop && pause");
+                system("..\\x64\\Debug\\AutomationAPIExe.exe defensive \"Raytheon\" && pause");
+                break;
+            case ID_FILE_VERIFYELECTION:
+                system("..\\x64\\Debug\\AutomationAPIExe.exe defensive \"Trump\" && pause");
+                break;
+            case ID_HACKCOUNTRY_CHINA:
+                system("..\\x64\\Debug\\AutomationAPIExe.exe offensive \"China\" && pause");
+                break;
+            case ID_HACKCOUNTRY_RUSSIA:
+                system("..\\x64\\Debug\\AutomationAPIExe.exe offensive \"Russia\" && pause");
+                break;
+            case ID_HACKCOUNTRY_IRAN:
+                system("..\\x64\\Debug\\AutomationAPIExe.exe offensive \"Iran\" && pause");
+                break;
+            case ID_HACKCOUNTRY_NORTHKOREA:
+                system("..\\x64\\Debug\\AutomationAPIExe.exe offensive \"North Korea\" && pause");
+                break;
+            case ID_FILE_LAUNCHNUKES:
+                system("..\\x64\\Debug\\AutomationAPIExe.exe offensive \"THe World\" && pause");
+                break;
             case IDM_EXIT:
                 DestroyWindow(hWnd);
                 break;
+                /*
+#define ID_FILE_FIXOILPIPELINE          32773
+#define ID_FILE_VERIFYELECTION          32774
+#define ID_HACKCOUNTRY_CHINA            32775
+#define ID_HACKCOUNTRY_RUSSIA           32776
+#define ID_HACKCOUNTRY_IRAN             32777
+#define ID_HACKCOUNTRY_NORTHKOREA       32778
+*/
             default:
                 return DefWindowProc(hWnd, message, wParam, lParam);
             }
