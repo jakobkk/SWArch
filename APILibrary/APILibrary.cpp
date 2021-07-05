@@ -42,6 +42,8 @@ int APIHandler::call_object(std::string type) {
         return 1;
     }
     Operation* op = new Operation("data_collection");
+    op->set_adversary("Russia");
+    op->set_notes("Why is it the Russians just have to brute force passwords to gain access???");
     create_node(op);
     return 0;
 }

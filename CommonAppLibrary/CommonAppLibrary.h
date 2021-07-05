@@ -45,10 +45,13 @@ public:
 	void set_op_type(std::string op);
 	void set_op_type(op_types op);
 	op_types str_to_op_type(std::string op);
-	// TODO call a core function
+	void set_notes(std::string incoming_notes);
+	std::string get_notes();
+	void set_adversary(std::string incoming_adversary);
+	std::string get_adversary();
 
 private:
 	op_types op_type;
+	std::string adversary;
+	std::string notes;
 };
-
-

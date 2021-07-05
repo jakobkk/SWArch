@@ -70,3 +70,18 @@ void Operation::set_op_type(op_types op) {
 	op_type = op;
 }
 
+void Operation::set_notes(std::string incoming_notes) {
+	notes = incoming_notes;
+}
+
+std::string Operation::get_notes() {
+	return notes;
+}
+
+void Operation::set_adversary(std::string incoming_adversary) {
+	adversary = incoming_adversary;
+}
+
+std::string Operation::get_adversary() {
+	return adversary;
+}

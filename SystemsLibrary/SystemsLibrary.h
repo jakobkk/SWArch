@@ -28,4 +28,6 @@ public:
 	FakeDb();
 	void write_to_db(void* obj);
 	std::string read_from_db();
+private:
+	std::string db_file;
 };
