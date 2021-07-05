@@ -154,6 +154,11 @@
     <Image Include="COCUI.ico" />
     <Image Include="small.ico" />
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\APILibrary\APILibrary.vcxproj">
+      <Project>{0726f78b-02d8-4bb5-af5f-ea4a7f057cc7}</Project>
+    </ProjectReference>
+  </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
   </ImportGroup>
