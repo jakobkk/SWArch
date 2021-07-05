@@ -6,10 +6,18 @@
 
 int main(int argc, char** argv)
 {
-    std::cout << "Hello World from the automation API!\n";
+    std::cout << "Hello World from the automation batch!\n";
+    //for (int i = 0; i < argc; i++) {
+    //    std::cout << "argv[" << i << "] is: " << argv[i] << std::endl;
+    //}
+
+    if (argc < 3) {
+        std::cout << "Form is ./automation.exe <operation_type> <adversary>" << std::endl;
+        return 1;
+    }
+
     APIHandler api = APIHandler();
-    api.HandleArgs("Some args");
-    api.call_object("operation");
+    api.call_object(argv[1], argv[2]);
 }
 
 // Run program: Ctrl + F5 or Debug > Start Without Debugging menu

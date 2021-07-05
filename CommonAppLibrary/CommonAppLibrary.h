@@ -29,7 +29,8 @@ enum COMMONAPPLIBRARY_API op_types {
 	defensive, 
 	offensive, 
 	incident_response, 
-	data_collection 
+	data_collection,
+	none
 };
 
 class COMMONAPPLIBRARY_API Operation
@@ -45,10 +46,12 @@ public:
 	void set_op_type(std::string op);
 	void set_op_type(op_types op);
 	op_types str_to_op_type(std::string op);
+	std::string op_type_to_string();
 	void set_notes(std::string incoming_notes);
 	std::string get_notes();
 	void set_adversary(std::string incoming_adversary);
 	std::string get_adversary();
+	void print_info();
 
 private:
 	op_types op_type;

@@ -35,15 +35,16 @@ int APIHandler::HandleArgs(std::string str) {
     return 0;
 }
 
-int APIHandler::call_object(std::string type) {
+int APIHandler::call_object(std::string type, std::string adversary) {
     log->log_event("call object");
     if (!per->has_permission(1)) {
         log->log_event("Does not have correct permissions for call object");
         return 1;
     }
-    Operation* op = new Operation("data_collection");
-    op->set_adversary("Russia");
-    op->set_notes("Why is it the Russians just have to brute force passwords to gain access???");
+    Operation* op = new Operation(type);
+    op->set_adversary(adversary);
+    //op->set_notes("Why is it the Russians just have to brute force passwords to gain access???");
+    op->print_info();
     create_node(op);
     return 0;
 }

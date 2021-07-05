@@ -23,16 +23,15 @@ CCommonAppLibrary::CCommonAppLibrary()
 Operation::Operation() {
 	*per = PermissionObject();
 	*log = Logging();
+	op_type = op_types::none;
 }
 
-Operation::Operation(std::string op) {
-	Operation();
+Operation::Operation(std::string op) : Operation(){
 	op_type = str_to_op_type(op);
-	std::cout << "Creating operation: " << op << std::endl;
+	std::cout << "[+] Creating operation: " << op << std::endl;
 }
 
-Operation::Operation(op_types op) {
-	Operation();
+Operation::Operation(op_types op) : Operation(){
 	op_type = op;
 }
 
@@ -53,9 +52,27 @@ op_types Operation::str_to_op_type(std::string op) {
 	}
 	else {
 		std::cout << "Error, incorrect operation type " << op << std::endl;
+		tmp = op_types::none;
 	}
-
 	return tmp;
+}
+
+std::string Operation::op_type_to_string() {
+	std::string str = "none";
+	if (op_type == op_types::defensive) {
+		str = "defensive";
+	}
+	else if (op_type == op_types::offensive) {
+		str = "offensive";
+	}
+	else if (op_type == op_types::incident_response) {
+		str = "incident_response";
+	}
+	else if (op_type == op_types::data_collection) {
+		str = "data_collection";
+	}
+	std::cout << "[!] op type is " << str << std::endl;
+	return str;
 }
 
 op_types Operation::get_op_type() {
@@ -84,4 +101,10 @@ void Operation::set_adversary(std::string incoming_adversary) {
 
 std::string Operation::get_adversary() {
 	return adversary;
+}
+
+void Operation::print_info() {
+	std::cout << "Operation type: " << op_type_to_string() << std::endl;
+	std::cout << "Adversary: " << adversary << std::endl;
+	std::cout << "Notes: " << notes << std::endl;
 }

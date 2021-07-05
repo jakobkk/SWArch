@@ -33,7 +33,7 @@ public:
 
 	APIHandler();
 	int HandleArgs(std::string str);
-	int call_object(std::string type);
+	int call_object(std::string type, std::string adversary);
 	void create_node(Operation* op);
 };
 

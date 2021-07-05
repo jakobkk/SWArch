@@ -32,12 +32,11 @@ void PermissionObject::Init() {
 bool PermissionObject::has_permission(int permission) {
     bool res = true;
     if (permission > 0) {
-        std::cout << "User has permission" << std::endl;
+        std::cout << "[*] User has permission" << std::endl;
     }
     else {
-        std::cout << "Not implemented yet" << std::endl;
+        std::cout << "[!] Not implemented yet" << std::endl;
         res = false;
     }
     return res;
 }
-
