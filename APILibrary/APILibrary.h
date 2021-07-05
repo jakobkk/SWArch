@@ -14,6 +14,7 @@
 //#include "../LoggingLibrary/LoggingLibrary.h"
 //#include "../PermissionsLibrary/PermissionsLibrary.h"
 #include "../CommonAppLibrary/CommonAppLibrary.h"
+//#include <boost/locale.h>
 
 // This class is exported from the dll
 class APILIBRARY_API CAPILibrary {

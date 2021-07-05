@@ -108,3 +108,8 @@ void Operation::print_info() {
 	std::cout << "Adversary: " << adversary << std::endl;
 	std::cout << "Notes: " << notes << std::endl;
 }
+
+Node Operation::create_operation_node() {
+	Node node = Node(this);
+	return node;
+}

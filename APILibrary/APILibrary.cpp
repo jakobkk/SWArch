@@ -55,6 +55,12 @@ void APIHandler::create_node(Operation* op) {
         log->log_event("Does not have correct permissions for create node from op");
         return;
     }
-    Node node = Node(op);
+    Node node = op->create_operation_node();
     node.write_to_fake_db();
+
+    //gen.add_message_path(".");
+    //gen.add_message_domain("finished");
+    //local::global(gen("de_DE.UTF - 8"));
+    //cout.imbue(locale());
+    //std::cout << translate("Finished creating ") << "Node" << std::endl;
 }

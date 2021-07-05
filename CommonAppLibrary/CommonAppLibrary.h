@@ -52,6 +52,7 @@ public:
 	void set_adversary(std::string incoming_adversary);
 	std::string get_adversary();
 	void print_info();
+	Node create_operation_node();
 
 private:
 	op_types op_type;

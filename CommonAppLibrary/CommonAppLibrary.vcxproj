@@ -158,6 +158,9 @@
     <ClCompile Include="dllmain.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\Core\Core.vcxproj">
+      <Project>{afdf72e7-21d9-4f0c-8cd0-ccdcec49da7f}</Project>
+    </ProjectReference>
     <ProjectReference Include="..\LoggingLibrary\LoggingLibrary.vcxproj">
       <Project>{d0c0d4a1-e2b9-446f-ab15-d51e1a5a37cb}</Project>
     </ProjectReference>
