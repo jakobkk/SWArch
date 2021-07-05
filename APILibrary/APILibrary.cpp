@@ -57,10 +57,10 @@ void APIHandler::create_node(Operation* op) {
     }
     Node node = op->create_operation_node();
     node.write_to_fake_db();
-
-    //gen.add_message_path(".");
-    //gen.add_message_domain("finished");
-    //local::global(gen("de_DE.UTF - 8"));
-    //cout.imbue(locale());
-    //std::cout << translate("Finished creating ") << "Node" << std::endl;
+    generator gen;
+    gen.add_messages_path(".");
+    gen.add_messages_domain("example");
+    std::locale::global(gen("de_DE.UTF - 8"));
+    std::cout.imbue(std::locale());
+    std::cout << translate("Translation in api (actually batch) libraries ") << std::endl;
 }

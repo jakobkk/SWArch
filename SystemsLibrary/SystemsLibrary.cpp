@@ -25,6 +25,13 @@ FakeDb::FakeDb() {
 }
 
 void FakeDb::write_to_db(void* obj) {
+    generator gen;
+    gen.add_messages_path(".");
+    gen.add_messages_domain("example");
+    std::locale::global(gen("de_DE.UTF - 8"));
+    std::cout.imbue(std::locale());
+    std::cout << translate("Translation in system libraries ") << std::endl;
+
     std::cout << "Write to db not implemented" << std::endl;
 }
 

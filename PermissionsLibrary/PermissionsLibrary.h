@@ -10,6 +10,9 @@
 #else
 #define PERMISSIONSLIBRARY_API __declspec(dllimport)
 #endif
+#include <boost/locale.hpp>
+using namespace boost::locale;
+
 
 // This class is exported from the dll
 class PERMISSIONSLIBRARY_API CPermissionsLibrary {

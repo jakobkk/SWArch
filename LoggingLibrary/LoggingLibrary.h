@@ -12,6 +12,8 @@
 
 #include <string>
 #include <iostream>
+#include <boost/locale.hpp>
+using namespace boost::locale;
 
 // This class is exported from the dll
 class LOGGINGLIBRARY_API CLoggingLibrary {

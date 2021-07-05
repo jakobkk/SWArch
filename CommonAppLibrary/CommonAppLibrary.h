@@ -24,6 +24,8 @@ COMMONAPPLIBRARY_API int fnCommonAppLibrary(void);
 #include "../LoggingLibrary/LoggingLibrary.h"
 #include "../PermissionsLibrary/PermissionsLibrary.h"
 #include "../Core/Core.h"
+#include <boost/locale.hpp>
+using namespace boost::locale;
 
 enum COMMONAPPLIBRARY_API op_types { 
 	defensive, 

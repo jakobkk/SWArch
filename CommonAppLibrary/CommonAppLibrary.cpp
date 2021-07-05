@@ -107,6 +107,12 @@ void Operation::print_info() {
 	std::cout << "Operation type: " << op_type_to_string() << std::endl;
 	std::cout << "Adversary: " << adversary << std::endl;
 	std::cout << "Notes: " << notes << std::endl;
+	generator gen;
+	gen.add_messages_path(".");
+	gen.add_messages_domain("example");
+	std::locale::global(gen("de_DE.UTF - 8"));
+	std::cout.imbue(std::locale());
+	std::cout << translate("Translation in common app libraries ") << std::endl;
 }
 
 Node Operation::create_operation_node() {

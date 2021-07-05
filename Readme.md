@@ -7,4 +7,5 @@
 	 1. In an elevated command prompt, run .\b2 --with-locale
   1. In Visual Studio, right click the project in the Solutions Explorer window, select Protperties
      1. Select Configuration Properties -> VC++ Directories
-	 1. Add *C:\Program Files\boost\boost_1_76_0* in External Include Directories *C:\Program Files\boost\boost_1_76_0\stage\lib* in Library Directories
+	 1. Add *C:\Program Files\boost\boost_1_76_0* in External Include Directories 
+	 *C:\Program Files\boost\boost_1_76_0\stage\lib* in Library Directories

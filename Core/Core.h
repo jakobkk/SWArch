@@ -10,6 +10,8 @@
 #define CORE_API __declspec(dllimport)
 #endif
 #include "../SystemsLibrary/SystemsLibrary.h"
+#include <boost/locale.hpp>
+using namespace boost::locale;
 
 // This class is exported from the dll
 class CORE_API CCore {

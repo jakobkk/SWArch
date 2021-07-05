@@ -11,6 +11,8 @@
 #endif
 
 #include <iostream>
+#include <boost/locale.hpp>
+using namespace boost::locale;
 
 // This class is exported from the dll
 class SYSTEMSLIBRARY_API CSystemsLibrary {

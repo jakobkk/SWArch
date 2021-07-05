@@ -3,13 +3,18 @@
 
 #include <iostream>
 #include "../APILibrary/APILibrary.h"
+#include <boost/locale.hpp>
+using namespace boost::locale;
 
 int main(int argc, char** argv)
 {
     std::cout << "Hello World from the automation batch!\n";
-    //for (int i = 0; i < argc; i++) {
-    //    std::cout << "argv[" << i << "] is: " << argv[i] << std::endl;
-    //}
+    generator gen;
+    gen.add_messages_path(".");
+    gen.add_messages_domain("example");
+    std::locale::global(gen("de_DE.UTF - 8"));
+    std::cout.imbue(std::locale());
+    std::cout << translate("Translation in automation libraries ") << std::endl;
 
     if (argc < 3) {
         std::cout << "Form is ./automation.exe <operation_type> <adversary>" << std::endl;

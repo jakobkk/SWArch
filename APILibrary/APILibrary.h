@@ -11,10 +11,9 @@
 #endif
 
 #include <string>
-//#include "../LoggingLibrary/LoggingLibrary.h"
-//#include "../PermissionsLibrary/PermissionsLibrary.h"
 #include "../CommonAppLibrary/CommonAppLibrary.h"
-//#include <boost/locale.h>
+#include <boost/locale.hpp>
+using namespace boost::locale;
 
 // This class is exported from the dll
 class APILIBRARY_API CAPILibrary {

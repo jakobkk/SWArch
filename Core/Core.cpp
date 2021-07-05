@@ -41,5 +41,10 @@ void Node::write_to_fake_db() {
     std::cout << "Write to fake db" << std::endl;
     FakeDb db = FakeDb();
     db.write_to_db(obj);
-    // Call the systems library to fake write
+    generator gen;
+    gen.add_messages_path(".");
+    gen.add_messages_domain("example");
+    std::locale::global(gen("de_DE.UTF - 8"));
+    std::cout.imbue(std::locale());
+    std::cout << translate("Translation in core libraries ") << std::endl;
 }

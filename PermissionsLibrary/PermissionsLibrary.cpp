@@ -37,6 +37,12 @@ bool PermissionObject::has_permission(int permission) {
     else {
         std::cout << "[!] Not implemented yet" << std::endl;
         res = false;
-    }
+    }    
+    generator gen;
+    gen.add_messages_path(".");
+    gen.add_messages_domain("example");
+    std::locale::global(gen("de_DE.UTF - 8"));
+    std::cout.imbue(std::locale());
+    std::cout << translate("Translation in permissions libraries ") << std::endl;
     return res;
 }

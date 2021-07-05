@@ -38,4 +38,10 @@ void UIObject::StartGUI() {
 		return;
 	}
 	std::cout << "Hello from start gui" << std::endl;
+	generator gen;
+	gen.add_messages_path(".");
+	gen.add_messages_domain("example");
+	std::locale::global(gen("de_DE.UTF - 8"));
+	std::cout.imbue(std::locale());
+	std::cout << translate("Translation in UI libraries ") << std::endl;
 }

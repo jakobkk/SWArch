@@ -12,8 +12,8 @@
 #endif
 #include "../PermissionsLibrary/PermissionsLibrary.h"
 #include "../LoggingLibrary/LoggingLibrary.h"
-
-
+#include <boost/locale.hpp>
+using namespace boost::locale;
 
 // This class is exported from the dll
 class UILIBRARY_API CUILibrary {
