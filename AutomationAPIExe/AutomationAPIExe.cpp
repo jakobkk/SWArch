@@ -4,6 +4,7 @@
 #include <iostream>
 #include "../APILibrary/APILibrary.h"
 #include <boost/locale.hpp>
+using namespace std;
 using namespace boost::locale;
 
 int main(int argc, char** argv)
@@ -11,18 +12,22 @@ int main(int argc, char** argv)
     std::cout << "Hello World from the automation batch!\n";
     generator gen;
     gen.add_messages_path(".");
-    gen.add_messages_domain("example");
-    std::locale::global(gen("de_DE.UTF - 8"));
-    std::cout.imbue(std::locale());
-    std::cout << translate("Translation in automation libraries ") << std::endl;
+    gen.add_messages_domain("messages");
+    locale::global(gen("de_DE.UTF - 8"));
+    cout.imbue(locale());
+    cout << translate("Translation in automation libraries") << endl;
+    locale::global(gen(""));
+    cout.imbue(locale());
+    cout << translate("Translation in automation libraries") << endl;
 
     if (argc < 3) {
-        std::cout << "Form is ./automation.exe <operation_type> <adversary>" << std::endl;
+        cout << "Form is ./automation.exe <operation_type> <adversary>" << endl;
         return 1;
     }
 
     APIHandler api = APIHandler();
-    api.call_object(argv[1], argv[2]);
+    // api.call_object(argv[1], argv[2]);
+    api.call_object("offensive", "russia");
 }
 
 // Run program: Ctrl + F5 or Debug > Start Without Debugging menu

@@ -43,8 +43,11 @@ void Node::write_to_fake_db() {
     db.write_to_db(obj);
     generator gen;
     gen.add_messages_path(".");
-    gen.add_messages_domain("example");
+    gen.add_messages_domain("messages");
     std::locale::global(gen("de_DE.UTF - 8"));
+    std::cout.imbue(std::locale());
+    std::cout << translate("Translation in core libraries ") << std::endl;
+    std::locale::global(gen(""));
     std::cout.imbue(std::locale());
     std::cout << translate("Translation in core libraries ") << std::endl;
 }
