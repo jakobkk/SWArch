@@ -156,10 +156,13 @@
   <ItemGroup>
     <ClInclude Include="CommonAppLibrary.h" />
     <ClInclude Include="framework.h" />
+    <ClInclude Include="IBuilder.h" />
+    <ClInclude Include="OpsBuilder.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="CommonAppLibrary.cpp" />
     <ClCompile Include="dllmain.cpp" />
+    <ClCompile Include="OpsBuilder.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\Core\Core.vcxproj">
