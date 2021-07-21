@@ -1,0 +1,96 @@
+\hypertarget{class_ops_builder}{}\doxysection{Ops\+Builder Class Reference}
+\label{class_ops_builder}\index{OpsBuilder@{OpsBuilder}}
+Inheritance diagram for Ops\+Builder\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_ops_builder}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+enum \mbox{\hyperlink{class_ops_builder_ab9eda3e754f4dd51188fdba29ea9fbfb}{Ops\+Builder\+Types}} \{ \mbox{\hyperlink{class_ops_builder_ab9eda3e754f4dd51188fdba29ea9fbfba89a293d02c03e4476b7553bdbca5d848}{Types\+By\+Adversary}}
+, \mbox{\hyperlink{class_ops_builder_ab9eda3e754f4dd51188fdba29ea9fbfbafc99c8d002a70b0e6e955373a07a94bf}{Types\+By\+Op\+Type}}
+ \}
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_ops_builder_ac6525530aca71636e2b670702beb08fb}\label{class_ops_builder_ac6525530aca71636e2b670702beb08fb}} 
+void {\bfseries Set\+Type} (\mbox{\hyperlink{class_ops_builder}{Ops\+Builder}} type)
+\item 
+\mbox{\Hypertarget{class_ops_builder_a12761ca9e20b6acb68f966afd0848d62}\label{class_ops_builder_a12761ca9e20b6acb68f966afd0848d62}} 
+\mbox{\hyperlink{class_ops_builder_ab9eda3e754f4dd51188fdba29ea9fbfb}{Ops\+Builder\+Types}} {\bfseries Get\+Type} ()
+\item 
+\mbox{\Hypertarget{class_ops_builder_a1b912d78a70122c3883a9d5bcb69afdf}\label{class_ops_builder_a1b912d78a70122c3883a9d5bcb69afdf}} 
+void {\bfseries Set\+Adversary} (std\+::string adversary)
+\item 
+\mbox{\Hypertarget{class_ops_builder_a5d8ded0987b330f21f5685ed18e446f3}\label{class_ops_builder_a5d8ded0987b330f21f5685ed18e446f3}} 
+std\+::string {\bfseries Get\+Adversary} ()
+\item 
+\mbox{\Hypertarget{class_ops_builder_a9d69782eb5c2523bd60e80a704040870}\label{class_ops_builder_a9d69782eb5c2523bd60e80a704040870}} 
+void {\bfseries Set\+Op\+Type} (op\+\_\+types type)
+\item 
+\mbox{\Hypertarget{class_ops_builder_a81c6df89cf5ea7da440d3f5ab20fdcbe}\label{class_ops_builder_a81c6df89cf5ea7da440d3f5ab20fdcbe}} 
+void {\bfseries Set\+Op\+Type} (std\+::string type)
+\item 
+\mbox{\Hypertarget{class_ops_builder_aa38c7b0751d71b674c2ba68e9db034f6}\label{class_ops_builder_aa38c7b0751d71b674c2ba68e9db034f6}} 
+op\+\_\+types {\bfseries Get\+Op\+Type} ()
+\item 
+\mbox{\Hypertarget{class_ops_builder_ae919c7922be8a08fce822982176c424c}\label{class_ops_builder_ae919c7922be8a08fce822982176c424c}} 
+void {\bfseries Set\+Notes} (std\+::string notes)
+\item 
+\mbox{\Hypertarget{class_ops_builder_a37739219dd29e5dcbc70ff17163d9cb4}\label{class_ops_builder_a37739219dd29e5dcbc70ff17163d9cb4}} 
+std\+::string {\bfseries Get\+Notes} ()
+\item 
+\mbox{\hyperlink{class_operation}{Operation}} $\ast$ \mbox{\hyperlink{class_ops_builder_a3f9927abd65fe9d8a2402b980b2b8421}{Build\+Operation}} () override
+\item 
+\mbox{\hyperlink{class_node}{Node}} $\ast$ \mbox{\hyperlink{class_ops_builder_a4c6b9aba01a38f86b6edefc5944574c9}{Build\+Node}} () override
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Member Enumeration Documentation}
+\mbox{\Hypertarget{class_ops_builder_ab9eda3e754f4dd51188fdba29ea9fbfb}\label{class_ops_builder_ab9eda3e754f4dd51188fdba29ea9fbfb}} 
+\index{OpsBuilder@{OpsBuilder}!OpsBuilderTypes@{OpsBuilderTypes}}
+\index{OpsBuilderTypes@{OpsBuilderTypes}!OpsBuilder@{OpsBuilder}}
+\doxysubsubsection{\texorpdfstring{OpsBuilderTypes}{OpsBuilderTypes}}
+{\footnotesize\ttfamily enum \mbox{\hyperlink{class_ops_builder_ab9eda3e754f4dd51188fdba29ea9fbfb}{Ops\+Builder\+::\+Ops\+Builder\+Types}}}
+
+\begin{DoxyEnumFields}{Enumerator}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{TypesByAdversary@{TypesByAdversary}!OpsBuilder@{OpsBuilder}}\index{OpsBuilder@{OpsBuilder}!TypesByAdversary@{TypesByAdversary}}}\mbox{\Hypertarget{class_ops_builder_ab9eda3e754f4dd51188fdba29ea9fbfba89a293d02c03e4476b7553bdbca5d848}\label{class_ops_builder_ab9eda3e754f4dd51188fdba29ea9fbfba89a293d02c03e4476b7553bdbca5d848}} 
+Types\+By\+Adversary&\mbox{\hyperlink{class_operation}{Operation}} created by providing adversary \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{TypesByOpType@{TypesByOpType}!OpsBuilder@{OpsBuilder}}\index{OpsBuilder@{OpsBuilder}!TypesByOpType@{TypesByOpType}}}\mbox{\Hypertarget{class_ops_builder_ab9eda3e754f4dd51188fdba29ea9fbfbafc99c8d002a70b0e6e955373a07a94bf}\label{class_ops_builder_ab9eda3e754f4dd51188fdba29ea9fbfbafc99c8d002a70b0e6e955373a07a94bf}} 
+Types\+By\+Op\+Type&\mbox{\hyperlink{class_operation}{Operation}} created by providing the operation type \\
+\hline
+
+\end{DoxyEnumFields}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_ops_builder_a4c6b9aba01a38f86b6edefc5944574c9}\label{class_ops_builder_a4c6b9aba01a38f86b6edefc5944574c9}} 
+\index{OpsBuilder@{OpsBuilder}!BuildNode@{BuildNode}}
+\index{BuildNode@{BuildNode}!OpsBuilder@{OpsBuilder}}
+\doxysubsubsection{\texorpdfstring{BuildNode()}{BuildNode()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_node}{Node}}$\ast$ Ops\+Builder\+::\+Build\+Node (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+Commit and build the object as a \mbox{\hyperlink{class_node}{Node}}. 
+
+Implements \mbox{\hyperlink{class_i_builder}{IBuilder}}.
+
+\mbox{\Hypertarget{class_ops_builder_a3f9927abd65fe9d8a2402b980b2b8421}\label{class_ops_builder_a3f9927abd65fe9d8a2402b980b2b8421}} 
+\index{OpsBuilder@{OpsBuilder}!BuildOperation@{BuildOperation}}
+\index{BuildOperation@{BuildOperation}!OpsBuilder@{OpsBuilder}}
+\doxysubsubsection{\texorpdfstring{BuildOperation()}{BuildOperation()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_operation}{Operation}}$\ast$ Ops\+Builder\+::\+Build\+Operation (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+Commit and build the object as an \mbox{\hyperlink{class_operation}{Operation}}. 
+
+Reimplemented from \mbox{\hyperlink{class_i_builder}{IBuilder}}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Common\+App\+Library/Ops\+Builder.\+h\end{DoxyCompactItemize}

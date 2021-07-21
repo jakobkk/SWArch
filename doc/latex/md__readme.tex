@@ -1,0 +1,26 @@
+\hypertarget{md__readme_autotoc_md1}{}\doxysection{Instructions}\label{md__readme_autotoc_md1}
+
+\begin{DoxyEnumerate}
+\item Download \href{https://www.boost.org/users/download/}{\texttt{ boost}}
+\end{DoxyEnumerate}
+\begin{DoxyEnumerate}
+\item Extract in $\ast$C\+:\textbackslash{}\+Program Files\textbackslash{}boost\textbackslash{}boost\+\_\+1\+\_\+76\+\_\+0$\ast$
+\end{DoxyEnumerate}
+\begin{DoxyEnumerate}
+\item Build the locale library
+\begin{DoxyEnumerate}
+\item In the extracted directory, run bootstrap.\+bat as an administrator, this will create b2.\+exe
+\end{DoxyEnumerate}
+\begin{DoxyEnumerate}
+\item In an elevated command prompt, run .\textbackslash{}b2 --with-\/locale
+\end{DoxyEnumerate}
+\end{DoxyEnumerate}
+\begin{DoxyEnumerate}
+\item In Visual Studio, right click the project in the Solutions Explorer window, select Protperties
+\begin{DoxyEnumerate}
+\item Select Configuration Properties -\/$>$ VC++ Directories
+\end{DoxyEnumerate}
+\begin{DoxyEnumerate}
+\item Add $\ast$C\+:\textbackslash{}\+Program Files\textbackslash{}boost\textbackslash{}boost\+\_\+1\+\_\+76\+\_\+0$\ast$ in External Include Directories $\ast$C\+:\textbackslash{}\+Program Files\textbackslash{}boost\textbackslash{}boost\+\_\+1\+\_\+76\+\_\+0\textbackslash{}stage\textbackslash{}lib$\ast$ in Library Directories 
+\end{DoxyEnumerate}
+\end{DoxyEnumerate}
