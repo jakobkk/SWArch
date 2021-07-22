@@ -157,6 +157,7 @@
   <ItemGroup>
     <ClInclude Include="Core.h" />
     <ClInclude Include="framework.h" />
+    <ClInclude Include="Observer.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Core.cpp" />

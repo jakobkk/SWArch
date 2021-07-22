@@ -1,0 +1,87 @@
+\hypertarget{class_network}{}\doxysection{Network Class Reference}
+\label{class_network}\index{Network@{Network}}
+
+
+{\ttfamily \#include $<$Network.\+h$>$}
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+int \mbox{\hyperlink{class_network_af8c76444ee68ccf8744425f67cf7e98f}{Connect\+Hosts}} (int host\+One\+Id, int host\+Two\+Id, int connection\+Id)
+\begin{DoxyCompactList}\small\item\em Creates a connection from one host to another via a connection \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{class_network_ae591fe4805e53e17f337d6eefe75aa97}{Mark\+Operational}} ()
+\item 
+int \mbox{\hyperlink{class_network_af60af53543f64be0610834a672a24e55}{Network\+Scan}} ()
+\item 
+virtual \mbox{\hyperlink{class_network_ae833815d689402bacbeea0b6226ff85a}{$\sim$\+Network}} ()
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+
+
+Definition at line 5 of file Network.\+h.
+
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_network_ae833815d689402bacbeea0b6226ff85a}\label{class_network_ae833815d689402bacbeea0b6226ff85a}} 
+\index{Network@{Network}!````~Network@{$\sim$Network}}
+\index{````~Network@{$\sim$Network}!Network@{Network}}
+\doxysubsubsection{\texorpdfstring{$\sim$Network()}{~Network()}}
+{\footnotesize\ttfamily virtual Network\+::$\sim$\+Network (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_network_af8c76444ee68ccf8744425f67cf7e98f}\label{class_network_af8c76444ee68ccf8744425f67cf7e98f}} 
+\index{Network@{Network}!ConnectHosts@{ConnectHosts}}
+\index{ConnectHosts@{ConnectHosts}!Network@{Network}}
+\doxysubsubsection{\texorpdfstring{ConnectHosts()}{ConnectHosts()}}
+{\footnotesize\ttfamily int Network\+::\+Connect\+Hosts (\begin{DoxyParamCaption}\item[{int}]{host\+One\+Id,  }\item[{int}]{host\+Two\+Id,  }\item[{int}]{connection\+Id }\end{DoxyParamCaption})}
+
+
+
+Creates a connection from one host to another via a connection 
+
+This helps connect everything in the network together.
+
+
+\begin{DoxyParams}{Parameters}
+{\em host\+One\+Id} & \\
+\hline
+{\em host\+Two\+Id} & \\
+\hline
+{\em connection\+Id} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+0 if success, errno otherwise 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_network_ae591fe4805e53e17f337d6eefe75aa97}\label{class_network_ae591fe4805e53e17f337d6eefe75aa97}} 
+\index{Network@{Network}!MarkOperational@{MarkOperational}}
+\index{MarkOperational@{MarkOperational}!Network@{Network}}
+\doxysubsubsection{\texorpdfstring{MarkOperational()}{MarkOperational()}}
+{\footnotesize\ttfamily int Network\+::\+Mark\+Operational (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Mark the network ready for an operation.
+
+\begin{DoxyReturn}{Returns}
+True if network was set to opeartional, False otherwise 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_network_af60af53543f64be0610834a672a24e55}\label{class_network_af60af53543f64be0610834a672a24e55}} 
+\index{Network@{Network}!NetworkScan@{NetworkScan}}
+\index{NetworkScan@{NetworkScan}!Network@{Network}}
+\doxysubsubsection{\texorpdfstring{NetworkScan()}{NetworkScan()}}
+{\footnotesize\ttfamily int Network\+::\+Network\+Scan (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\hyperlink{class_network}{Network}} scan to ensure things are working as expected.
+
+\begin{DoxyReturn}{Returns}
+0 if success, errno otherwise 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{_network_8h}{Network.\+h}}\end{DoxyCompactItemize}

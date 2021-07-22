@@ -1,0 +1,26 @@
+var class_operation =
+[
+    [ "Operation", "class_operation.html#a55f76bcb8990f4dba577990af0c8399e", null ],
+    [ "Operation", "class_operation.html#a5d11b0e99e65580db9c7d9d13c90f5b6", null ],
+    [ "Operation", "class_operation.html#aeae8b31ccf1f922316c6c06353c2a898", null ],
+    [ "Operation", "class_operation.html#a55f76bcb8990f4dba577990af0c8399e", null ],
+    [ "Operation", "class_operation.html#a5d11b0e99e65580db9c7d9d13c90f5b6", null ],
+    [ "Operation", "class_operation.html#aeae8b31ccf1f922316c6c06353c2a898", null ],
+    [ "create_operation_node", "class_operation.html#ad1e8d510858770fe70fd0c28cb0457ed", null ],
+    [ "get_adversary", "class_operation.html#af8bb165e893a590d692d15e22c58546b", null ],
+    [ "get_notes", "class_operation.html#a73918f723fc330c9077d904da8116e00", null ],
+    [ "get_op_type", "class_operation.html#ae518a41f44f0dda03b5b54868e4b3dfd", null ],
+    [ "get_op_type", "class_operation.html#ae518a41f44f0dda03b5b54868e4b3dfd", null ],
+    [ "op_type_to_string", "class_operation.html#a00e97a27cecad83ff3c100961a0a4650", null ],
+    [ "print_info", "class_operation.html#a6470cd1477ac74b98d39484862f9fca5", null ],
+    [ "set_adversary", "class_operation.html#a2679f449f5aebae0cc3b19d4279de440", null ],
+    [ "set_notes", "class_operation.html#aed0da7763c59f3523c2e02562043c3e3", null ],
+    [ "set_op_type", "class_operation.html#a57e956d1f03bdb55d1ce4579b191e63f", null ],
+    [ "set_op_type", "class_operation.html#a57e956d1f03bdb55d1ce4579b191e63f", null ],
+    [ "set_op_type", "class_operation.html#ab1492538e9629b63af4ce9e655d981ba", null ],
+    [ "set_op_type", "class_operation.html#ab1492538e9629b63af4ce9e655d981ba", null ],
+    [ "str_to_op_type", "class_operation.html#a8b0e161d1d64e9f65e927865f4c284e4", null ],
+    [ "str_to_op_type", "class_operation.html#a8b0e161d1d64e9f65e927865f4c284e4", null ],
+    [ "log", "class_operation.html#aac79ac0bc7a3d9378d48777ac429f21d", null ],
+    [ "per", "class_operation.html#a8f5bd96c4bdfaa86a37ce8d1811ff5db", null ]
+];

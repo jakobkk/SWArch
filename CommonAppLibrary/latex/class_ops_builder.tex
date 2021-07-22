@@ -1,0 +1,120 @@
+\hypertarget{class_ops_builder}{}\doxysection{Ops\+Builder Class Reference}
+\label{class_ops_builder}\index{OpsBuilder@{OpsBuilder}}
+
+
+Build up an \mbox{\hyperlink{class_operation}{Operation}} by seperately adding adversary, operation type and notes  
+
+
+
+
+{\ttfamily \#include $<$Ops\+Builder.\+h$>$}
+
+Inheritance diagram for Ops\+Builder\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_ops_builder}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{class_ops_builder_a1b912d78a70122c3883a9d5bcb69afdf}{Set\+Adversary}} (std\+::string adversary)
+\item 
+std\+::string \mbox{\hyperlink{class_ops_builder_a5d8ded0987b330f21f5685ed18e446f3}{Get\+Adversary}} ()
+\item 
+void \mbox{\hyperlink{class_ops_builder_a9d69782eb5c2523bd60e80a704040870}{Set\+Op\+Type}} (\mbox{\hyperlink{_operation_8h_ac5051815721bb378ca946fa3c30626f0}{op\+\_\+types}} type)
+\item 
+void \mbox{\hyperlink{class_ops_builder_a81c6df89cf5ea7da440d3f5ab20fdcbe}{Set\+Op\+Type}} (std\+::string type)
+\item 
+\mbox{\hyperlink{_operation_8h_ac5051815721bb378ca946fa3c30626f0}{op\+\_\+types}} \mbox{\hyperlink{class_ops_builder_aa38c7b0751d71b674c2ba68e9db034f6}{Get\+Op\+Type}} ()
+\item 
+void \mbox{\hyperlink{class_ops_builder_ae919c7922be8a08fce822982176c424c}{Set\+Notes}} (std\+::string notes)
+\item 
+std\+::string \mbox{\hyperlink{class_ops_builder_a37739219dd29e5dcbc70ff17163d9cb4}{Get\+Notes}} ()
+\item 
+\mbox{\hyperlink{class_operation}{Operation}} $\ast$ \mbox{\hyperlink{class_ops_builder_a59c49e5abd3aae858a33e1286cdd9f99}{Build}} () override
+\item 
+Node $\ast$ \mbox{\hyperlink{class_ops_builder_a4c6b9aba01a38f86b6edefc5944574c9}{Build\+Node}} () override
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Build up an \mbox{\hyperlink{class_operation}{Operation}} by seperately adding adversary, operation type and notes 
+
+
+
+Definition at line 10 of file Ops\+Builder.\+h.
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_ops_builder_a59c49e5abd3aae858a33e1286cdd9f99}\label{class_ops_builder_a59c49e5abd3aae858a33e1286cdd9f99}} 
+\index{OpsBuilder@{OpsBuilder}!Build@{Build}}
+\index{Build@{Build}!OpsBuilder@{OpsBuilder}}
+\doxysubsubsection{\texorpdfstring{Build()}{Build()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_operation}{Operation}}$\ast$ Ops\+Builder\+::\+Build (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+Object is finished, so build the object. 
+
+Reimplemented from \mbox{\hyperlink{class_i_builder}{IBuilder}}.
+
+\mbox{\Hypertarget{class_ops_builder_a4c6b9aba01a38f86b6edefc5944574c9}\label{class_ops_builder_a4c6b9aba01a38f86b6edefc5944574c9}} 
+\index{OpsBuilder@{OpsBuilder}!BuildNode@{BuildNode}}
+\index{BuildNode@{BuildNode}!OpsBuilder@{OpsBuilder}}
+\doxysubsubsection{\texorpdfstring{BuildNode()}{BuildNode()}}
+{\footnotesize\ttfamily Node$\ast$ Ops\+Builder\+::\+Build\+Node (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+Object is finished, so build the object \begin{DoxySeeAlso}{See also}
+Node. 
+\end{DoxySeeAlso}
+
+
+Implements \mbox{\hyperlink{class_i_builder}{IBuilder}}.
+
+\mbox{\Hypertarget{class_ops_builder_a5d8ded0987b330f21f5685ed18e446f3}\label{class_ops_builder_a5d8ded0987b330f21f5685ed18e446f3}} 
+\index{OpsBuilder@{OpsBuilder}!GetAdversary@{GetAdversary}}
+\index{GetAdversary@{GetAdversary}!OpsBuilder@{OpsBuilder}}
+\doxysubsubsection{\texorpdfstring{GetAdversary()}{GetAdversary()}}
+{\footnotesize\ttfamily std\+::string Ops\+Builder\+::\+Get\+Adversary (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Get the adversary of the operation \mbox{\Hypertarget{class_ops_builder_a37739219dd29e5dcbc70ff17163d9cb4}\label{class_ops_builder_a37739219dd29e5dcbc70ff17163d9cb4}} 
+\index{OpsBuilder@{OpsBuilder}!GetNotes@{GetNotes}}
+\index{GetNotes@{GetNotes}!OpsBuilder@{OpsBuilder}}
+\doxysubsubsection{\texorpdfstring{GetNotes()}{GetNotes()}}
+{\footnotesize\ttfamily std\+::string Ops\+Builder\+::\+Get\+Notes (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Keep track of detailed notes of the operation \mbox{\Hypertarget{class_ops_builder_aa38c7b0751d71b674c2ba68e9db034f6}\label{class_ops_builder_aa38c7b0751d71b674c2ba68e9db034f6}} 
+\index{OpsBuilder@{OpsBuilder}!GetOpType@{GetOpType}}
+\index{GetOpType@{GetOpType}!OpsBuilder@{OpsBuilder}}
+\doxysubsubsection{\texorpdfstring{GetOpType()}{GetOpType()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{_operation_8h_ac5051815721bb378ca946fa3c30626f0}{op\+\_\+types}} Ops\+Builder\+::\+Get\+Op\+Type (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Get the opeartion type \mbox{\Hypertarget{class_ops_builder_a1b912d78a70122c3883a9d5bcb69afdf}\label{class_ops_builder_a1b912d78a70122c3883a9d5bcb69afdf}} 
+\index{OpsBuilder@{OpsBuilder}!SetAdversary@{SetAdversary}}
+\index{SetAdversary@{SetAdversary}!OpsBuilder@{OpsBuilder}}
+\doxysubsubsection{\texorpdfstring{SetAdversary()}{SetAdversary()}}
+{\footnotesize\ttfamily void Ops\+Builder\+::\+Set\+Adversary (\begin{DoxyParamCaption}\item[{std\+::string}]{adversary }\end{DoxyParamCaption})}
+
+Set the adversary to be the target of the operation \mbox{\Hypertarget{class_ops_builder_ae919c7922be8a08fce822982176c424c}\label{class_ops_builder_ae919c7922be8a08fce822982176c424c}} 
+\index{OpsBuilder@{OpsBuilder}!SetNotes@{SetNotes}}
+\index{SetNotes@{SetNotes}!OpsBuilder@{OpsBuilder}}
+\doxysubsubsection{\texorpdfstring{SetNotes()}{SetNotes()}}
+{\footnotesize\ttfamily void Ops\+Builder\+::\+Set\+Notes (\begin{DoxyParamCaption}\item[{std\+::string}]{notes }\end{DoxyParamCaption})}
+
+Set detailed notes for the operation \mbox{\Hypertarget{class_ops_builder_a9d69782eb5c2523bd60e80a704040870}\label{class_ops_builder_a9d69782eb5c2523bd60e80a704040870}} 
+\index{OpsBuilder@{OpsBuilder}!SetOpType@{SetOpType}}
+\index{SetOpType@{SetOpType}!OpsBuilder@{OpsBuilder}}
+\doxysubsubsection{\texorpdfstring{SetOpType()}{SetOpType()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily void Ops\+Builder\+::\+Set\+Op\+Type (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{_operation_8h_ac5051815721bb378ca946fa3c30626f0}{op\+\_\+types}}}]{type }\end{DoxyParamCaption})}
+
+Set the operation type based on the \mbox{\hyperlink{_operation_8h_ac5051815721bb378ca946fa3c30626f0}{operation types}} \mbox{\Hypertarget{class_ops_builder_a81c6df89cf5ea7da440d3f5ab20fdcbe}\label{class_ops_builder_a81c6df89cf5ea7da440d3f5ab20fdcbe}} 
+\index{OpsBuilder@{OpsBuilder}!SetOpType@{SetOpType}}
+\index{SetOpType@{SetOpType}!OpsBuilder@{OpsBuilder}}
+\doxysubsubsection{\texorpdfstring{SetOpType()}{SetOpType()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily void Ops\+Builder\+::\+Set\+Op\+Type (\begin{DoxyParamCaption}\item[{std\+::string}]{type }\end{DoxyParamCaption})}
+
+Set the operation type based on the \mbox{\hyperlink{_operation_8h_ac5051815721bb378ca946fa3c30626f0}{operation types}} 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{_ops_builder_8h}{Ops\+Builder.\+h}}\end{DoxyCompactItemize}

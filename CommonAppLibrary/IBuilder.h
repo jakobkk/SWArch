@@ -6,12 +6,12 @@
 class COMMONAPPLIBRARY_API IBuilder
 {
 	/**
-	 * Commit and build the object as an Operation.
+	 * Object is finished, so build the object.
 	 */
-	virtual Operation* BuildOperation();
+	virtual void* Build();
 
 	/**
-	 * Commit and build the object as a Node.
+	 * Object is finished, so build the object @see Node.
 	 */
 	virtual Node* BuildNode() = 0;
 };

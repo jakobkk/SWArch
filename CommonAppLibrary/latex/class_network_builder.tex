@@ -1,0 +1,310 @@
+\hypertarget{class_network_builder}{}\doxysection{Network\+Builder Class Reference}
+\label{class_network_builder}\index{NetworkBuilder@{NetworkBuilder}}
+
+
+Create a \mbox{\hyperlink{class_network}{Network}} using extra end points, extra connections, or for a specific mission based on enum  
+
+
+
+
+{\ttfamily \#include $<$Network\+Builder.\+h$>$}
+
+Inheritance diagram for Network\+Builder\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_network_builder}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+enum \mbox{\hyperlink{class_network_builder_ad086af04ca9f4875d57f76a35eeeb79c}{Network\+Builder\+Types}} \{ \mbox{\hyperlink{class_network_builder_ad086af04ca9f4875d57f76a35eeeb79ca771cb14f5d5e4fc7b9c7646bae254ede}{Types\+By\+End\+Points}}
+, \mbox{\hyperlink{class_network_builder_ad086af04ca9f4875d57f76a35eeeb79ca4e76e245001dea4583e34881e3a2b056}{Types\+By\+Connection}}
+, \mbox{\hyperlink{class_network_builder_ad086af04ca9f4875d57f76a35eeeb79ca6c8ffcf0ce84e410f6e801d1377a2f97}{Types\+By\+Mission}}
+ \}
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{class_network_builder_af6a1776c0d33d05f38df7583819e9313}{Set\+Type}} (\mbox{\hyperlink{class_network_builder}{Network\+Builder}} type)
+\item 
+\mbox{\hyperlink{class_network_builder}{Network\+Builder}} \mbox{\hyperlink{class_network_builder_ad4be26cf5d32a49652ec71367795babd}{Get\+Type}} ()
+\item 
+void \mbox{\hyperlink{class_network_builder_af90b81c70178334bc5bc78644f8f7695}{Set\+Host\+Count}} (int count)
+\item 
+int \mbox{\hyperlink{class_network_builder_a356c2b718ba336668cdddfb7e7a74e05}{Get\+Host\+Count}} ()
+\item 
+void \mbox{\hyperlink{class_network_builder_a3ec942863f121264bf8625b87d63c894}{Set\+Router\+Count}} (int count)
+\item 
+int \mbox{\hyperlink{class_network_builder_ae590b5ec05c99d30514f7e1b49855495}{Get\+Router\+Count}} ()
+\item 
+void \mbox{\hyperlink{class_network_builder_ab02b3d88862d0cea9f54f0431495e308}{Increment\+Host\+Count}} ()
+\item 
+void \mbox{\hyperlink{class_network_builder_a5793eefde77391007bfcf1327d7e9653}{Set\+User\+Count}} (int count)
+\item 
+int \mbox{\hyperlink{class_network_builder_ac67afc02c9f200fedaad67a8e051f996}{Get\+User\+Count}} ()
+\item 
+void \mbox{\hyperlink{class_network_builder_a7e6ef7ff45e809a9e0a859b82de510bd}{Increment\+Router\+Count}} ()
+\item 
+void \mbox{\hyperlink{class_network_builder_a8d928d69b1f1ea600b146c794ef97934}{Set\+Host\+Type}} (std\+::string type)
+\item 
+std\+::string \mbox{\hyperlink{class_network_builder_aa3c71393183e5e883ec7e371c8370f83}{Get\+Host\+Type}} ()
+\item 
+void \mbox{\hyperlink{class_network_builder_a48645dcafc812d36904ef8f5d19409aa}{Increment\+User\+Count}} ()
+\item 
+void \mbox{\hyperlink{class_network_builder_a271c71a21c103f1801b78119bfce4870}{Set\+Connection\+Type}} (std\+::string type)
+\item 
+std\+::string \mbox{\hyperlink{class_network_builder_a71bd01238e96cdf6ed282006e97f2594}{Get\+Connection\+Type}} ()
+\item 
+void \mbox{\hyperlink{class_network_builder_afb6522faa5f944d23b56d09d2eba3263}{Set\+Mission\+Info}} (std\+::string info)
+\item 
+std\+::string \mbox{\hyperlink{class_network_builder_a146905fff5a37dcb4cd5527cb85a332b}{Get\+Mission\+Info}} ()
+\item 
+void \mbox{\hyperlink{class_network_builder_a5627504163eccbf80b4580680f3a27c4}{Set\+Mission\+Reqs}} (std\+::string type)
+\item 
+std\+::string \mbox{\hyperlink{class_network_builder_add156435e22feaff66ec2312db006789}{Get\+Mission\+Reqs}} ()
+\item 
+void \mbox{\hyperlink{class_network_builder_af507d2581ce62640f5a9feb2ccbd63d0}{Set\+Notes}} (std\+::string notes)
+\item 
+std\+::string \mbox{\hyperlink{class_network_builder_a9f5ab94a1b51f3f26de1e6b6c630c25f}{Get\+Notes}} ()
+\item 
+\mbox{\hyperlink{class_network}{Network}} $\ast$ \mbox{\hyperlink{class_network_builder_a9f66d2adeec650b8cf7d2bd69d5f2881}{Build}} () override
+\item 
+Node $\ast$ \mbox{\hyperlink{class_network_builder_aecdf44db4d950f20a79eb4794ca32a31}{Build\+Node}} () override
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Create a \mbox{\hyperlink{class_network}{Network}} using extra end points, extra connections, or for a specific mission based on enum 
+
+
+
+Definition at line 11 of file Network\+Builder.\+h.
+
+
+
+\doxysubsection{Member Enumeration Documentation}
+\mbox{\Hypertarget{class_network_builder_ad086af04ca9f4875d57f76a35eeeb79c}\label{class_network_builder_ad086af04ca9f4875d57f76a35eeeb79c}} 
+\index{NetworkBuilder@{NetworkBuilder}!NetworkBuilderTypes@{NetworkBuilderTypes}}
+\index{NetworkBuilderTypes@{NetworkBuilderTypes}!NetworkBuilder@{NetworkBuilder}}
+\doxysubsubsection{\texorpdfstring{NetworkBuilderTypes}{NetworkBuilderTypes}}
+{\footnotesize\ttfamily enum \mbox{\hyperlink{class_network_builder_ad086af04ca9f4875d57f76a35eeeb79c}{Network\+Builder\+::\+Network\+Builder\+Types}}}
+
+Creating the network either comes from extra end points, extra connections or if there is already a mission. \begin{DoxyEnumFields}{Enumerator}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{TypesByEndPoints@{TypesByEndPoints}!NetworkBuilder@{NetworkBuilder}}\index{NetworkBuilder@{NetworkBuilder}!TypesByEndPoints@{TypesByEndPoints}}}\mbox{\Hypertarget{class_network_builder_ad086af04ca9f4875d57f76a35eeeb79ca771cb14f5d5e4fc7b9c7646bae254ede}\label{class_network_builder_ad086af04ca9f4875d57f76a35eeeb79ca771cb14f5d5e4fc7b9c7646bae254ede}} 
+Types\+By\+End\+Points&\mbox{\hyperlink{class_network}{Network}} built up around the network end points (hosts) \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{TypesByConnection@{TypesByConnection}!NetworkBuilder@{NetworkBuilder}}\index{NetworkBuilder@{NetworkBuilder}!TypesByConnection@{TypesByConnection}}}\mbox{\Hypertarget{class_network_builder_ad086af04ca9f4875d57f76a35eeeb79ca4e76e245001dea4583e34881e3a2b056}\label{class_network_builder_ad086af04ca9f4875d57f76a35eeeb79ca4e76e245001dea4583e34881e3a2b056}} 
+Types\+By\+Connection&\mbox{\hyperlink{class_network}{Network}} built up around the connections across the network \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{TypesByMission@{TypesByMission}!NetworkBuilder@{NetworkBuilder}}\index{NetworkBuilder@{NetworkBuilder}!TypesByMission@{TypesByMission}}}\mbox{\Hypertarget{class_network_builder_ad086af04ca9f4875d57f76a35eeeb79ca6c8ffcf0ce84e410f6e801d1377a2f97}\label{class_network_builder_ad086af04ca9f4875d57f76a35eeeb79ca6c8ffcf0ce84e410f6e801d1377a2f97}} 
+Types\+By\+Mission&\mbox{\hyperlink{class_network}{Network}} built up around the mission the network will be used for \\
+\hline
+
+\end{DoxyEnumFields}
+
+
+Definition at line 18 of file Network\+Builder.\+h.
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_network_builder_a9f66d2adeec650b8cf7d2bd69d5f2881}\label{class_network_builder_a9f66d2adeec650b8cf7d2bd69d5f2881}} 
+\index{NetworkBuilder@{NetworkBuilder}!Build@{Build}}
+\index{Build@{Build}!NetworkBuilder@{NetworkBuilder}}
+\doxysubsubsection{\texorpdfstring{Build()}{Build()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_network}{Network}}$\ast$ Network\+Builder\+::\+Build (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+Object is finished, so build the object. 
+
+Reimplemented from \mbox{\hyperlink{class_i_builder}{IBuilder}}.
+
+\mbox{\Hypertarget{class_network_builder_aecdf44db4d950f20a79eb4794ca32a31}\label{class_network_builder_aecdf44db4d950f20a79eb4794ca32a31}} 
+\index{NetworkBuilder@{NetworkBuilder}!BuildNode@{BuildNode}}
+\index{BuildNode@{BuildNode}!NetworkBuilder@{NetworkBuilder}}
+\doxysubsubsection{\texorpdfstring{BuildNode()}{BuildNode()}}
+{\footnotesize\ttfamily Node$\ast$ Network\+Builder\+::\+Build\+Node (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+Object is finished, so build the object \begin{DoxySeeAlso}{See also}
+Node. 
+\end{DoxySeeAlso}
+
+
+Implements \mbox{\hyperlink{class_i_builder}{IBuilder}}.
+
+\mbox{\Hypertarget{class_network_builder_a71bd01238e96cdf6ed282006e97f2594}\label{class_network_builder_a71bd01238e96cdf6ed282006e97f2594}} 
+\index{NetworkBuilder@{NetworkBuilder}!GetConnectionType@{GetConnectionType}}
+\index{GetConnectionType@{GetConnectionType}!NetworkBuilder@{NetworkBuilder}}
+\doxysubsubsection{\texorpdfstring{GetConnectionType()}{GetConnectionType()}}
+{\footnotesize\ttfamily std\+::string Network\+Builder\+::\+Get\+Connection\+Type (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Used to keep track of total\+Users \mbox{\Hypertarget{class_network_builder_a356c2b718ba336668cdddfb7e7a74e05}\label{class_network_builder_a356c2b718ba336668cdddfb7e7a74e05}} 
+\index{NetworkBuilder@{NetworkBuilder}!GetHostCount@{GetHostCount}}
+\index{GetHostCount@{GetHostCount}!NetworkBuilder@{NetworkBuilder}}
+\doxysubsubsection{\texorpdfstring{GetHostCount()}{GetHostCount()}}
+{\footnotesize\ttfamily int Network\+Builder\+::\+Get\+Host\+Count (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Used by Types\+By\+End\+Points for when you have extra end points that need to be used by do not neccessarily have a mission yet.. Ignored if not Types\+By\+End\+Points.
+
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_network_builder_aa3c71393183e5e883ec7e371c8370f83}\label{class_network_builder_aa3c71393183e5e883ec7e371c8370f83}} 
+\index{NetworkBuilder@{NetworkBuilder}!GetHostType@{GetHostType}}
+\index{GetHostType@{GetHostType}!NetworkBuilder@{NetworkBuilder}}
+\doxysubsubsection{\texorpdfstring{GetHostType()}{GetHostType()}}
+{\footnotesize\ttfamily std\+::string Network\+Builder\+::\+Get\+Host\+Type (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Used to keep track of total\+Routers \mbox{\Hypertarget{class_network_builder_a146905fff5a37dcb4cd5527cb85a332b}\label{class_network_builder_a146905fff5a37dcb4cd5527cb85a332b}} 
+\index{NetworkBuilder@{NetworkBuilder}!GetMissionInfo@{GetMissionInfo}}
+\index{GetMissionInfo@{GetMissionInfo}!NetworkBuilder@{NetworkBuilder}}
+\doxysubsubsection{\texorpdfstring{GetMissionInfo()}{GetMissionInfo()}}
+{\footnotesize\ttfamily std\+::string Network\+Builder\+::\+Get\+Mission\+Info (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Used by Types\+By\+Mission to establish mission info with the intent of focusing on specific network information later. Ignored if not Types\+By\+Mission.
+
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_network_builder_add156435e22feaff66ec2312db006789}\label{class_network_builder_add156435e22feaff66ec2312db006789}} 
+\index{NetworkBuilder@{NetworkBuilder}!GetMissionReqs@{GetMissionReqs}}
+\index{GetMissionReqs@{GetMissionReqs}!NetworkBuilder@{NetworkBuilder}}
+\doxysubsubsection{\texorpdfstring{GetMissionReqs()}{GetMissionReqs()}}
+{\footnotesize\ttfamily std\+::string Network\+Builder\+::\+Get\+Mission\+Reqs (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Used by Types\+By\+Mission to get the mission requirements \mbox{\Hypertarget{class_network_builder_a9f5ab94a1b51f3f26de1e6b6c630c25f}\label{class_network_builder_a9f5ab94a1b51f3f26de1e6b6c630c25f}} 
+\index{NetworkBuilder@{NetworkBuilder}!GetNotes@{GetNotes}}
+\index{GetNotes@{GetNotes}!NetworkBuilder@{NetworkBuilder}}
+\doxysubsubsection{\texorpdfstring{GetNotes()}{GetNotes()}}
+{\footnotesize\ttfamily std\+::string Network\+Builder\+::\+Get\+Notes (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Keep track of detailed notes for the network \mbox{\Hypertarget{class_network_builder_ae590b5ec05c99d30514f7e1b49855495}\label{class_network_builder_ae590b5ec05c99d30514f7e1b49855495}} 
+\index{NetworkBuilder@{NetworkBuilder}!GetRouterCount@{GetRouterCount}}
+\index{GetRouterCount@{GetRouterCount}!NetworkBuilder@{NetworkBuilder}}
+\doxysubsubsection{\texorpdfstring{GetRouterCount()}{GetRouterCount()}}
+{\footnotesize\ttfamily int Network\+Builder\+::\+Get\+Router\+Count (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Used by Types\+By\+Connection for when you have extra connections that need used but do not have a mission. Ignored if not Types\+By\+Connection.
+
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_network_builder_ad4be26cf5d32a49652ec71367795babd}\label{class_network_builder_ad4be26cf5d32a49652ec71367795babd}} 
+\index{NetworkBuilder@{NetworkBuilder}!GetType@{GetType}}
+\index{GetType@{GetType}!NetworkBuilder@{NetworkBuilder}}
+\doxysubsubsection{\texorpdfstring{GetType()}{GetType()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_network_builder}{Network\+Builder}} Network\+Builder\+::\+Get\+Type (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_network_builder_ac67afc02c9f200fedaad67a8e051f996}\label{class_network_builder_ac67afc02c9f200fedaad67a8e051f996}} 
+\index{NetworkBuilder@{NetworkBuilder}!GetUserCount@{GetUserCount}}
+\index{GetUserCount@{GetUserCount}!NetworkBuilder@{NetworkBuilder}}
+\doxysubsubsection{\texorpdfstring{GetUserCount()}{GetUserCount()}}
+{\footnotesize\ttfamily int Network\+Builder\+::\+Get\+User\+Count (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Used to keep track of total\+Hosts \mbox{\Hypertarget{class_network_builder_ab02b3d88862d0cea9f54f0431495e308}\label{class_network_builder_ab02b3d88862d0cea9f54f0431495e308}} 
+\index{NetworkBuilder@{NetworkBuilder}!IncrementHostCount@{IncrementHostCount}}
+\index{IncrementHostCount@{IncrementHostCount}!NetworkBuilder@{NetworkBuilder}}
+\doxysubsubsection{\texorpdfstring{IncrementHostCount()}{IncrementHostCount()}}
+{\footnotesize\ttfamily void Network\+Builder\+::\+Increment\+Host\+Count (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Used to keep track of total\+Hosts \mbox{\Hypertarget{class_network_builder_a7e6ef7ff45e809a9e0a859b82de510bd}\label{class_network_builder_a7e6ef7ff45e809a9e0a859b82de510bd}} 
+\index{NetworkBuilder@{NetworkBuilder}!IncrementRouterCount@{IncrementRouterCount}}
+\index{IncrementRouterCount@{IncrementRouterCount}!NetworkBuilder@{NetworkBuilder}}
+\doxysubsubsection{\texorpdfstring{IncrementRouterCount()}{IncrementRouterCount()}}
+{\footnotesize\ttfamily void Network\+Builder\+::\+Increment\+Router\+Count (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Used to keep track of total\+Routers \mbox{\Hypertarget{class_network_builder_a48645dcafc812d36904ef8f5d19409aa}\label{class_network_builder_a48645dcafc812d36904ef8f5d19409aa}} 
+\index{NetworkBuilder@{NetworkBuilder}!IncrementUserCount@{IncrementUserCount}}
+\index{IncrementUserCount@{IncrementUserCount}!NetworkBuilder@{NetworkBuilder}}
+\doxysubsubsection{\texorpdfstring{IncrementUserCount()}{IncrementUserCount()}}
+{\footnotesize\ttfamily void Network\+Builder\+::\+Increment\+User\+Count (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Used to keep track of total\+Users \mbox{\Hypertarget{class_network_builder_a271c71a21c103f1801b78119bfce4870}\label{class_network_builder_a271c71a21c103f1801b78119bfce4870}} 
+\index{NetworkBuilder@{NetworkBuilder}!SetConnectionType@{SetConnectionType}}
+\index{SetConnectionType@{SetConnectionType}!NetworkBuilder@{NetworkBuilder}}
+\doxysubsubsection{\texorpdfstring{SetConnectionType()}{SetConnectionType()}}
+{\footnotesize\ttfamily void Network\+Builder\+::\+Set\+Connection\+Type (\begin{DoxyParamCaption}\item[{std\+::string}]{type }\end{DoxyParamCaption})}
+
+Used to keep track of total\+Users \mbox{\Hypertarget{class_network_builder_af90b81c70178334bc5bc78644f8f7695}\label{class_network_builder_af90b81c70178334bc5bc78644f8f7695}} 
+\index{NetworkBuilder@{NetworkBuilder}!SetHostCount@{SetHostCount}}
+\index{SetHostCount@{SetHostCount}!NetworkBuilder@{NetworkBuilder}}
+\doxysubsubsection{\texorpdfstring{SetHostCount()}{SetHostCount()}}
+{\footnotesize\ttfamily void Network\+Builder\+::\+Set\+Host\+Count (\begin{DoxyParamCaption}\item[{int}]{count }\end{DoxyParamCaption})}
+
+Used by Types\+By\+End\+Points for when you have extra end points that need to be used by do not neccessarily have a mission yet. Ignored if not Types\+By\+End\+Points.
+
+
+\begin{DoxyParams}{Parameters}
+{\em count} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_network_builder_a8d928d69b1f1ea600b146c794ef97934}\label{class_network_builder_a8d928d69b1f1ea600b146c794ef97934}} 
+\index{NetworkBuilder@{NetworkBuilder}!SetHostType@{SetHostType}}
+\index{SetHostType@{SetHostType}!NetworkBuilder@{NetworkBuilder}}
+\doxysubsubsection{\texorpdfstring{SetHostType()}{SetHostType()}}
+{\footnotesize\ttfamily void Network\+Builder\+::\+Set\+Host\+Type (\begin{DoxyParamCaption}\item[{std\+::string}]{type }\end{DoxyParamCaption})}
+
+Used to keep track of total\+Routers \mbox{\Hypertarget{class_network_builder_afb6522faa5f944d23b56d09d2eba3263}\label{class_network_builder_afb6522faa5f944d23b56d09d2eba3263}} 
+\index{NetworkBuilder@{NetworkBuilder}!SetMissionInfo@{SetMissionInfo}}
+\index{SetMissionInfo@{SetMissionInfo}!NetworkBuilder@{NetworkBuilder}}
+\doxysubsubsection{\texorpdfstring{SetMissionInfo()}{SetMissionInfo()}}
+{\footnotesize\ttfamily void Network\+Builder\+::\+Set\+Mission\+Info (\begin{DoxyParamCaption}\item[{std\+::string}]{info }\end{DoxyParamCaption})}
+
+Used by Types\+By\+Mission to establish mission info with the intent of focusing on specific network information later. Ignored if not Types\+By\+Mission.
+
+
+\begin{DoxyParams}{Parameters}
+{\em info} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_network_builder_a5627504163eccbf80b4580680f3a27c4}\label{class_network_builder_a5627504163eccbf80b4580680f3a27c4}} 
+\index{NetworkBuilder@{NetworkBuilder}!SetMissionReqs@{SetMissionReqs}}
+\index{SetMissionReqs@{SetMissionReqs}!NetworkBuilder@{NetworkBuilder}}
+\doxysubsubsection{\texorpdfstring{SetMissionReqs()}{SetMissionReqs()}}
+{\footnotesize\ttfamily void Network\+Builder\+::\+Set\+Mission\+Reqs (\begin{DoxyParamCaption}\item[{std\+::string}]{type }\end{DoxyParamCaption})}
+
+Used by Types\+By\+Mission to establish mission requirements. Useful for \mbox{\hyperlink{class_network_ae591fe4805e53e17f337d6eefe75aa97}{Mark\+Opearational}} \mbox{\Hypertarget{class_network_builder_af507d2581ce62640f5a9feb2ccbd63d0}\label{class_network_builder_af507d2581ce62640f5a9feb2ccbd63d0}} 
+\index{NetworkBuilder@{NetworkBuilder}!SetNotes@{SetNotes}}
+\index{SetNotes@{SetNotes}!NetworkBuilder@{NetworkBuilder}}
+\doxysubsubsection{\texorpdfstring{SetNotes()}{SetNotes()}}
+{\footnotesize\ttfamily void Network\+Builder\+::\+Set\+Notes (\begin{DoxyParamCaption}\item[{std\+::string}]{notes }\end{DoxyParamCaption})}
+
+Set detailed notes for the network \mbox{\Hypertarget{class_network_builder_a3ec942863f121264bf8625b87d63c894}\label{class_network_builder_a3ec942863f121264bf8625b87d63c894}} 
+\index{NetworkBuilder@{NetworkBuilder}!SetRouterCount@{SetRouterCount}}
+\index{SetRouterCount@{SetRouterCount}!NetworkBuilder@{NetworkBuilder}}
+\doxysubsubsection{\texorpdfstring{SetRouterCount()}{SetRouterCount()}}
+{\footnotesize\ttfamily void Network\+Builder\+::\+Set\+Router\+Count (\begin{DoxyParamCaption}\item[{int}]{count }\end{DoxyParamCaption})}
+
+Used by Types\+By\+Connection for when you have extra connections that need used but do not have a mission. Ignored if not Types\+By\+Connection.
+
+
+\begin{DoxyParams}{Parameters}
+{\em count} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_network_builder_af6a1776c0d33d05f38df7583819e9313}\label{class_network_builder_af6a1776c0d33d05f38df7583819e9313}} 
+\index{NetworkBuilder@{NetworkBuilder}!SetType@{SetType}}
+\index{SetType@{SetType}!NetworkBuilder@{NetworkBuilder}}
+\doxysubsubsection{\texorpdfstring{SetType()}{SetType()}}
+{\footnotesize\ttfamily void Network\+Builder\+::\+Set\+Type (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_network_builder}{Network\+Builder}}}]{type }\end{DoxyParamCaption})}
+
+Set the type for the network builder that is used to determine what functions can be called.
+
+
+\begin{DoxyParams}{Parameters}
+{\em type} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_network_builder_a5793eefde77391007bfcf1327d7e9653}\label{class_network_builder_a5793eefde77391007bfcf1327d7e9653}} 
+\index{NetworkBuilder@{NetworkBuilder}!SetUserCount@{SetUserCount}}
+\index{SetUserCount@{SetUserCount}!NetworkBuilder@{NetworkBuilder}}
+\doxysubsubsection{\texorpdfstring{SetUserCount()}{SetUserCount()}}
+{\footnotesize\ttfamily void Network\+Builder\+::\+Set\+User\+Count (\begin{DoxyParamCaption}\item[{int}]{count }\end{DoxyParamCaption})}
+
+Used to keep track of total\+Hosts 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{_network_builder_8h}{Network\+Builder.\+h}}\end{DoxyCompactItemize}

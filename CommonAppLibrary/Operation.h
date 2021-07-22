@@ -26,10 +26,15 @@
 #include "../LoggingLibrary/Logging.h"
 #include "../PermissionsLibrary/PermissionsLibrary.h"
 
+/** The different opeartion types that are supported */
 enum COMMONAPPLIBRARY_API op_types { 
+	/** Defend a given platform/network/area/etc */
 	defensive, 
+	/** Attack a given target */
 	offensive, 
+	/** Respond to an ongoing attack */
 	incident_response, 
+	/** Collect data on a variety of topics */
 	data_collection 
 };
 
@@ -42,11 +47,11 @@ public:
 	Operation();
 	Operation(std::string op);
 	Operation(op_types op);
+
 	op_types get_op_type();
 	void set_op_type(std::string op);
 	void set_op_type(op_types op);
 	op_types str_to_op_type(std::string op);
-	// TODO call a core function
 
 private:
 	op_types op_type;
