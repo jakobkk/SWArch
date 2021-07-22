@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.9.1"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>COC: OpsBuilder Class Reference</title>
+<title>Cyber Operations Center: OpsBuilder Class Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -20,12 +20,9 @@
 <table cellspacing="0" cellpadding="0">
  <tbody>
  <tr style="height: 56px;">
-  <td id="projectlogo"><img alt="Logo" src="logo.jpg"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">COC
-   &#160;<span id="projectnumber">0.1</span>
+   <div id="projectname">Cyber Operations Center
    </div>
-   <div id="projectbrief">Cyber Operations Center</div>
   </td>
  </tr>
  </tbody>
@@ -65,13 +62,17 @@ $(function() {
 </div><!-- top -->
 <div class="header">
   <div class="summary">
-<a href="#pub-types">Public Types</a> &#124;
 <a href="#pub-methods">Public Member Functions</a> &#124;
 <a href="class_ops_builder-members.html">List of all members</a>  </div>
   <div class="headertitle">
 <div class="title">OpsBuilder Class Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
+
+<p>Build up an <a class="el" href="class_operation.html">Operation</a> by seperately adding adversary, operation type and notes  
+ <a href="class_ops_builder.html#details">More...</a></p>
+
+<p><code>#include &lt;<a class="el" href="_ops_builder_8h_source.html">OpsBuilder.h</a>&gt;</code></p>
 <div class="dynheader">
 Inheritance diagram for OpsBuilder:</div>
 <div class="dyncontent">
@@ -82,69 +83,58 @@ Inheritance diagram for OpsBuilder:</div>
   </map>
 </div></div>
 <table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-types"></a>
-Public Types</h2></td></tr>
-<tr class="memitem:ab9eda3e754f4dd51188fdba29ea9fbfb"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_ops_builder.html#ab9eda3e754f4dd51188fdba29ea9fbfb">OpsBuilderTypes</a> { <a class="el" href="class_ops_builder.html#ab9eda3e754f4dd51188fdba29ea9fbfba89a293d02c03e4476b7553bdbca5d848">TypesByAdversary</a>
-, <a class="el" href="class_ops_builder.html#ab9eda3e754f4dd51188fdba29ea9fbfbafc99c8d002a70b0e6e955373a07a94bf">TypesByOpType</a>
- }</td></tr>
-<tr class="separator:ab9eda3e754f4dd51188fdba29ea9fbfb"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:ac6525530aca71636e2b670702beb08fb"><td class="memItemLeft" align="right" valign="top"><a id="ac6525530aca71636e2b670702beb08fb"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>SetType</b> (<a class="el" href="class_ops_builder.html">OpsBuilder</a> type)</td></tr>
-<tr class="separator:ac6525530aca71636e2b670702beb08fb"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a12761ca9e20b6acb68f966afd0848d62"><td class="memItemLeft" align="right" valign="top"><a id="a12761ca9e20b6acb68f966afd0848d62"></a>
-<a class="el" href="class_ops_builder.html#ab9eda3e754f4dd51188fdba29ea9fbfb">OpsBuilderTypes</a>&#160;</td><td class="memItemRight" valign="bottom"><b>GetType</b> ()</td></tr>
-<tr class="separator:a12761ca9e20b6acb68f966afd0848d62"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1b912d78a70122c3883a9d5bcb69afdf"><td class="memItemLeft" align="right" valign="top"><a id="a1b912d78a70122c3883a9d5bcb69afdf"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>SetAdversary</b> (std::string adversary)</td></tr>
+<tr class="memitem:a1b912d78a70122c3883a9d5bcb69afdf"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_ops_builder.html#a1b912d78a70122c3883a9d5bcb69afdf">SetAdversary</a> (std::string adversary)</td></tr>
 <tr class="separator:a1b912d78a70122c3883a9d5bcb69afdf"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5d8ded0987b330f21f5685ed18e446f3"><td class="memItemLeft" align="right" valign="top"><a id="a5d8ded0987b330f21f5685ed18e446f3"></a>
-std::string&#160;</td><td class="memItemRight" valign="bottom"><b>GetAdversary</b> ()</td></tr>
+<tr class="memitem:a5d8ded0987b330f21f5685ed18e446f3"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_ops_builder.html#a5d8ded0987b330f21f5685ed18e446f3">GetAdversary</a> ()</td></tr>
 <tr class="separator:a5d8ded0987b330f21f5685ed18e446f3"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9d69782eb5c2523bd60e80a704040870"><td class="memItemLeft" align="right" valign="top"><a id="a9d69782eb5c2523bd60e80a704040870"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>SetOpType</b> (op_types type)</td></tr>
+<tr class="memitem:a9d69782eb5c2523bd60e80a704040870"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_ops_builder.html#a9d69782eb5c2523bd60e80a704040870">SetOpType</a> (op_types type)</td></tr>
 <tr class="separator:a9d69782eb5c2523bd60e80a704040870"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a81c6df89cf5ea7da440d3f5ab20fdcbe"><td class="memItemLeft" align="right" valign="top"><a id="a81c6df89cf5ea7da440d3f5ab20fdcbe"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>SetOpType</b> (std::string type)</td></tr>
+<tr class="memitem:a81c6df89cf5ea7da440d3f5ab20fdcbe"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_ops_builder.html#a81c6df89cf5ea7da440d3f5ab20fdcbe">SetOpType</a> (std::string type)</td></tr>
 <tr class="separator:a81c6df89cf5ea7da440d3f5ab20fdcbe"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa38c7b0751d71b674c2ba68e9db034f6"><td class="memItemLeft" align="right" valign="top"><a id="aa38c7b0751d71b674c2ba68e9db034f6"></a>
-op_types&#160;</td><td class="memItemRight" valign="bottom"><b>GetOpType</b> ()</td></tr>
+<tr class="memitem:aa38c7b0751d71b674c2ba68e9db034f6"><td class="memItemLeft" align="right" valign="top">op_types&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_ops_builder.html#aa38c7b0751d71b674c2ba68e9db034f6">GetOpType</a> ()</td></tr>
 <tr class="separator:aa38c7b0751d71b674c2ba68e9db034f6"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae919c7922be8a08fce822982176c424c"><td class="memItemLeft" align="right" valign="top"><a id="ae919c7922be8a08fce822982176c424c"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>SetNotes</b> (std::string notes)</td></tr>
+<tr class="memitem:ae919c7922be8a08fce822982176c424c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_ops_builder.html#ae919c7922be8a08fce822982176c424c">SetNotes</a> (std::string notes)</td></tr>
 <tr class="separator:ae919c7922be8a08fce822982176c424c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a37739219dd29e5dcbc70ff17163d9cb4"><td class="memItemLeft" align="right" valign="top"><a id="a37739219dd29e5dcbc70ff17163d9cb4"></a>
-std::string&#160;</td><td class="memItemRight" valign="bottom"><b>GetNotes</b> ()</td></tr>
+<tr class="memitem:a37739219dd29e5dcbc70ff17163d9cb4"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_ops_builder.html#a37739219dd29e5dcbc70ff17163d9cb4">GetNotes</a> ()</td></tr>
 <tr class="separator:a37739219dd29e5dcbc70ff17163d9cb4"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3f9927abd65fe9d8a2402b980b2b8421"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_operation.html">Operation</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_ops_builder.html#a3f9927abd65fe9d8a2402b980b2b8421">BuildOperation</a> () override</td></tr>
-<tr class="separator:a3f9927abd65fe9d8a2402b980b2b8421"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a59c49e5abd3aae858a33e1286cdd9f99"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_operation.html">Operation</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_ops_builder.html#a59c49e5abd3aae858a33e1286cdd9f99">Build</a> () override</td></tr>
+<tr class="separator:a59c49e5abd3aae858a33e1286cdd9f99"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4c6b9aba01a38f86b6edefc5944574c9"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_node.html">Node</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_ops_builder.html#a4c6b9aba01a38f86b6edefc5944574c9">BuildNode</a> () override</td></tr>
 <tr class="separator:a4c6b9aba01a38f86b6edefc5944574c9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<h2 class="groupheader">Member Enumeration Documentation</h2>
-<a id="ab9eda3e754f4dd51188fdba29ea9fbfb"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ab9eda3e754f4dd51188fdba29ea9fbfb">&#9670;&nbsp;</a></span>OpsBuilderTypes</h2>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>Build up an <a class="el" href="class_operation.html">Operation</a> by seperately adding adversary, operation type and notes </p>
+</div><h2 class="groupheader">Member Function Documentation</h2>
+<a id="a59c49e5abd3aae858a33e1286cdd9f99"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a59c49e5abd3aae858a33e1286cdd9f99">&#9670;&nbsp;</a></span>Build()</h2>
 
 <div class="memitem">
 <div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">enum <a class="el" href="class_ops_builder.html#ab9eda3e754f4dd51188fdba29ea9fbfb">OpsBuilder::OpsBuilderTypes</a></td>
+          <td class="memname"><a class="el" href="class_operation.html">Operation</a>* OpsBuilder::Build </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
         </tr>
       </table>
-</div><div class="memdoc">
-<table class="fieldtable">
-<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="ab9eda3e754f4dd51188fdba29ea9fbfba89a293d02c03e4476b7553bdbca5d848"></a>TypesByAdversary&#160;</td><td class="fielddoc"><p><a class="el" href="class_operation.html">Operation</a> created by providing adversary </p>
-</td></tr>
-<tr><td class="fieldname"><a id="ab9eda3e754f4dd51188fdba29ea9fbfbafc99c8d002a70b0e6e955373a07a94bf"></a>TypesByOpType&#160;</td><td class="fielddoc"><p><a class="el" href="class_operation.html">Operation</a> created by providing the operation type </p>
-</td></tr>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">override</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
 </table>
+</div><div class="memdoc">
+<p>Object is finished, so build the object. </p>
+
+<p>Reimplemented from <a class="el" href="class_i_builder.html">IBuilder</a>.</p>
 
 </div>
 </div>
-<h2 class="groupheader">Member Function Documentation</h2>
 <a id="a4c6b9aba01a38f86b6edefc5944574c9"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a4c6b9aba01a38f86b6edefc5944574c9">&#9670;&nbsp;</a></span>BuildNode()</h2>
 
@@ -167,37 +157,139 @@ std::string&#160;</td><td class="memItemRight" valign="bottom"><b>GetNotes</b> (
   </tr>
 </table>
 </div><div class="memdoc">
-<p>Commit and build the object as a <a class="el" href="class_node.html">Node</a>. </p>
+<p>Object is finished, so build the object </p><dl class="section see"><dt>See also</dt><dd><a class="el" href="class_node.html">Node</a>. </dd></dl>
 
 <p>Implements <a class="el" href="class_i_builder.html">IBuilder</a>.</p>
 
 </div>
 </div>
-<a id="a3f9927abd65fe9d8a2402b980b2b8421"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a3f9927abd65fe9d8a2402b980b2b8421">&#9670;&nbsp;</a></span>BuildOperation()</h2>
+<a id="a5d8ded0987b330f21f5685ed18e446f3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5d8ded0987b330f21f5685ed18e446f3">&#9670;&nbsp;</a></span>GetAdversary()</h2>
 
 <div class="memitem">
 <div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="class_operation.html">Operation</a>* OpsBuilder::BuildOperation </td>
+          <td class="memname">std::string OpsBuilder::GetAdversary </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
         </tr>
       </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">override</span><span class="mlabel">virtual</span></span>  </td>
-  </tr>
-</table>
 </div><div class="memdoc">
-<p>Commit and build the object as an <a class="el" href="class_operation.html">Operation</a>. </p>
+<p>Get the adversary of the operation </p>
 
-<p>Reimplemented from <a class="el" href="class_i_builder.html">IBuilder</a>.</p>
+</div>
+</div>
+<a id="a37739219dd29e5dcbc70ff17163d9cb4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a37739219dd29e5dcbc70ff17163d9cb4">&#9670;&nbsp;</a></span>GetNotes()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::string OpsBuilder::GetNotes </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Keep track of detailed notes of the operation </p>
+
+</div>
+</div>
+<a id="aa38c7b0751d71b674c2ba68e9db034f6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa38c7b0751d71b674c2ba68e9db034f6">&#9670;&nbsp;</a></span>GetOpType()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">op_types OpsBuilder::GetOpType </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Get the opeartion type </p>
+
+</div>
+</div>
+<a id="a1b912d78a70122c3883a9d5bcb69afdf"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1b912d78a70122c3883a9d5bcb69afdf">&#9670;&nbsp;</a></span>SetAdversary()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void OpsBuilder::SetAdversary </td>
+          <td>(</td>
+          <td class="paramtype">std::string&#160;</td>
+          <td class="paramname"><em>adversary</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Set the adversary to be the target of the operation </p>
+
+</div>
+</div>
+<a id="ae919c7922be8a08fce822982176c424c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae919c7922be8a08fce822982176c424c">&#9670;&nbsp;</a></span>SetNotes()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void OpsBuilder::SetNotes </td>
+          <td>(</td>
+          <td class="paramtype">std::string&#160;</td>
+          <td class="paramname"><em>notes</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Set detailed notes for the operation </p>
+
+</div>
+</div>
+<a id="a9d69782eb5c2523bd60e80a704040870"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9d69782eb5c2523bd60e80a704040870">&#9670;&nbsp;</a></span>SetOpType() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void OpsBuilder::SetOpType </td>
+          <td>(</td>
+          <td class="paramtype">op_types&#160;</td>
+          <td class="paramname"><em>type</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Set the operation type based on the operation types </p>
+
+</div>
+</div>
+<a id="a81c6df89cf5ea7da440d3f5ab20fdcbe"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a81c6df89cf5ea7da440d3f5ab20fdcbe">&#9670;&nbsp;</a></span>SetOpType() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void OpsBuilder::SetOpType </td>
+          <td>(</td>
+          <td class="paramtype">std::string&#160;</td>
+          <td class="paramname"><em>type</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Set the operation type based on the operation types </p>
 
 </div>
 </div>

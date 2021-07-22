@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.9.1"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>COC: CommonAppLibrary/OpsBuilder.h Source File</title>
+<title>Cyber Operations Center: CommonAppLibrary/OpsBuilder.h Source File</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -20,12 +20,9 @@
 <table cellspacing="0" cellpadding="0">
  <tbody>
  <tr style="height: 56px;">
-  <td id="projectlogo"><img alt="Logo" src="logo.jpg"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">COC
-   &#160;<span id="projectnumber">0.1</span>
+   <div id="projectname">Cyber Operations Center
    </div>
-   <div id="projectbrief">Cyber Operations Center</div>
   </td>
  </tr>
  </tbody>
@@ -76,46 +73,42 @@ $(function() {
 <div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160; </div>
 <div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="preprocessor">#include &quot;CommonAppLibrary.h&quot;</span></div>
 <div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="preprocessor">#include &quot;IBuilder.h&quot;</span></div>
-<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160; </div>
-<div class="line"><a name="l00006"></a><span class="lineno"><a class="line" href="class_ops_builder.html">    6</a></span>&#160;<span class="keyword">class </span>COMMONAPPLIBRARY_API <a class="code" href="class_ops_builder.html">OpsBuilder</a> : <span class="keyword">public</span> <a class="code" href="class_i_builder.html">IBuilder</a></div>
-<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;{</div>
-<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;    <span class="keyword">class </span><a class="code" href="class_operation.html">Operation</a>;</div>
-<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;    <span class="keyword">class </span><a class="code" href="class_node.html">Node</a>;</div>
-<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160; </div>
-<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="keyword">public</span>:</div>
-<div class="line"><a name="l00012"></a><span class="lineno"><a class="line" href="class_ops_builder.html#ab9eda3e754f4dd51188fdba29ea9fbfb">   12</a></span>&#160;    <span class="keyword">enum</span> <a class="code" href="class_ops_builder.html#ab9eda3e754f4dd51188fdba29ea9fbfb">OpsBuilderTypes</a></div>
-<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;    {</div>
-<div class="line"><a name="l00015"></a><span class="lineno"><a class="line" href="class_ops_builder.html#ab9eda3e754f4dd51188fdba29ea9fbfba89a293d02c03e4476b7553bdbca5d848">   15</a></span>&#160;        <a class="code" href="class_ops_builder.html#ab9eda3e754f4dd51188fdba29ea9fbfba89a293d02c03e4476b7553bdbca5d848">TypesByAdversary</a>,</div>
-<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;        TypesByOpType </div>
-<div class="line"><a name="l00018"></a><span class="lineno"><a class="line" href="class_ops_builder.html#ab9eda3e754f4dd51188fdba29ea9fbfbafc99c8d002a70b0e6e955373a07a94bf">   18</a></span>&#160;    };</div>
+<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="preprocessor">#include &quot;Operation.h&quot;</span></div>
+<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160; </div>
+<div class="line"><a name="l00010"></a><span class="lineno"><a class="line" href="class_ops_builder.html">   10</a></span>&#160;<span class="keyword">class </span>COMMONAPPLIBRARY_API <a class="code" href="class_ops_builder.html">OpsBuilder</a> : <span class="keyword">public</span> <a class="code" href="class_i_builder.html">IBuilder</a></div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;{</div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160; </div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160; </div>
+<div class="line"><a name="l00016"></a><span class="lineno"><a class="line" href="class_ops_builder.html#a1b912d78a70122c3883a9d5bcb69afdf">   16</a></span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_ops_builder.html#a1b912d78a70122c3883a9d5bcb69afdf">SetAdversary</a>(std::string adversary);</div>
+<div class="line"><a name="l00018"></a><span class="lineno"><a class="line" href="class_ops_builder.html#a5d8ded0987b330f21f5685ed18e446f3">   18</a></span>&#160;    std::string <a class="code" href="class_ops_builder.html#a5d8ded0987b330f21f5685ed18e446f3">GetAdversary</a>();</div>
 <div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160; </div>
-<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;    <span class="keywordtype">void</span> SetType(<a class="code" href="class_ops_builder.html">OpsBuilder</a> type);</div>
-<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;    OpsBuilderTypes GetType();</div>
-<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160; </div>
-<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;    <span class="keywordtype">void</span> SetAdversary(std::string adversary);</div>
-<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;    std::string GetAdversary();</div>
-<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160; </div>
-<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;    <span class="keywordtype">void</span> SetOpType(op_types type);</div>
-<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;    <span class="keywordtype">void</span> SetOpType(std::string type);</div>
-<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;    op_types GetOpType();</div>
-<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160; </div>
-<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;    <span class="keywordtype">void</span> SetNotes(std::string notes);</div>
-<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;    std::string GetNotes();</div>
-<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160; </div>
-<div class="line"><a name="l00033"></a><span class="lineno"><a class="line" href="class_ops_builder.html#a3f9927abd65fe9d8a2402b980b2b8421">   33</a></span>&#160;    <a class="code" href="class_operation.html">Operation</a>* <a class="code" href="class_ops_builder.html#a3f9927abd65fe9d8a2402b980b2b8421">BuildOperation</a>() <span class="keyword">override</span>; </div>
-<div class="line"><a name="l00034"></a><span class="lineno"><a class="line" href="class_ops_builder.html#a4c6b9aba01a38f86b6edefc5944574c9">   34</a></span>&#160;    <a class="code" href="class_node.html">Node</a>* <a class="code" href="class_ops_builder.html#a4c6b9aba01a38f86b6edefc5944574c9">BuildNode</a>() <span class="keyword">override</span>; </div>
-<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160; </div>
-<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;<span class="keyword">private</span>:</div>
-<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160; </div>
-<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;};</div>
+<div class="line"><a name="l00021"></a><span class="lineno"><a class="line" href="class_ops_builder.html#a9d69782eb5c2523bd60e80a704040870">   21</a></span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_ops_builder.html#a9d69782eb5c2523bd60e80a704040870">SetOpType</a>(op_types type);</div>
+<div class="line"><a name="l00023"></a><span class="lineno"><a class="line" href="class_ops_builder.html#a81c6df89cf5ea7da440d3f5ab20fdcbe">   23</a></span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_ops_builder.html#a81c6df89cf5ea7da440d3f5ab20fdcbe">SetOpType</a>(std::string type);</div>
+<div class="line"><a name="l00025"></a><span class="lineno"><a class="line" href="class_ops_builder.html#aa38c7b0751d71b674c2ba68e9db034f6">   25</a></span>&#160;    op_types <a class="code" href="class_ops_builder.html#aa38c7b0751d71b674c2ba68e9db034f6">GetOpType</a>();</div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160; </div>
+<div class="line"><a name="l00028"></a><span class="lineno"><a class="line" href="class_ops_builder.html#ae919c7922be8a08fce822982176c424c">   28</a></span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_ops_builder.html#ae919c7922be8a08fce822982176c424c">SetNotes</a>(std::string notes);</div>
+<div class="line"><a name="l00030"></a><span class="lineno"><a class="line" href="class_ops_builder.html#a37739219dd29e5dcbc70ff17163d9cb4">   30</a></span>&#160;    std::string <a class="code" href="class_ops_builder.html#a37739219dd29e5dcbc70ff17163d9cb4">GetNotes</a>();</div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160; </div>
+<div class="line"><a name="l00032"></a><span class="lineno"><a class="line" href="class_ops_builder.html#a59c49e5abd3aae858a33e1286cdd9f99">   32</a></span>&#160;    <a class="code" href="class_operation.html">Operation</a>* <a class="code" href="class_ops_builder.html#a59c49e5abd3aae858a33e1286cdd9f99">Build</a>() <span class="keyword">override</span>; </div>
+<div class="line"><a name="l00033"></a><span class="lineno"><a class="line" href="class_ops_builder.html#a4c6b9aba01a38f86b6edefc5944574c9">   33</a></span>&#160;    <a class="code" href="class_node.html">Node</a>* <a class="code" href="class_ops_builder.html#a4c6b9aba01a38f86b6edefc5944574c9">BuildNode</a>() <span class="keyword">override</span>; </div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160; </div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;<span class="keyword">private</span>:</div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160; </div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;};</div>
 <div class="ttc" id="aclass_i_builder_html"><div class="ttname"><a href="class_i_builder.html">IBuilder</a></div><div class="ttdef"><b>Definition:</b> IBuilder.h:7</div></div>
 <div class="ttc" id="aclass_node_html"><div class="ttname"><a href="class_node.html">Node</a></div><div class="ttdef"><b>Definition:</b> Core.h:27</div></div>
 <div class="ttc" id="aclass_operation_html"><div class="ttname"><a href="class_operation.html">Operation</a></div><div class="ttdef"><b>Definition:</b> CommonAppLibrary.h:39</div></div>
-<div class="ttc" id="aclass_ops_builder_html"><div class="ttname"><a href="class_ops_builder.html">OpsBuilder</a></div><div class="ttdef"><b>Definition:</b> OpsBuilder.h:7</div></div>
-<div class="ttc" id="aclass_ops_builder_html_a3f9927abd65fe9d8a2402b980b2b8421"><div class="ttname"><a href="class_ops_builder.html#a3f9927abd65fe9d8a2402b980b2b8421">OpsBuilder::BuildOperation</a></div><div class="ttdeci">Operation * BuildOperation() override</div></div>
+<div class="ttc" id="aclass_ops_builder_html"><div class="ttname"><a href="class_ops_builder.html">OpsBuilder</a></div><div class="ttdoc">Build up an Operation by seperately adding adversary, operation type and notes</div><div class="ttdef"><b>Definition:</b> OpsBuilder.h:11</div></div>
+<div class="ttc" id="aclass_ops_builder_html_a1b912d78a70122c3883a9d5bcb69afdf"><div class="ttname"><a href="class_ops_builder.html#a1b912d78a70122c3883a9d5bcb69afdf">OpsBuilder::SetAdversary</a></div><div class="ttdeci">void SetAdversary(std::string adversary)</div></div>
+<div class="ttc" id="aclass_ops_builder_html_a37739219dd29e5dcbc70ff17163d9cb4"><div class="ttname"><a href="class_ops_builder.html#a37739219dd29e5dcbc70ff17163d9cb4">OpsBuilder::GetNotes</a></div><div class="ttdeci">std::string GetNotes()</div></div>
 <div class="ttc" id="aclass_ops_builder_html_a4c6b9aba01a38f86b6edefc5944574c9"><div class="ttname"><a href="class_ops_builder.html#a4c6b9aba01a38f86b6edefc5944574c9">OpsBuilder::BuildNode</a></div><div class="ttdeci">Node * BuildNode() override</div></div>
-<div class="ttc" id="aclass_ops_builder_html_ab9eda3e754f4dd51188fdba29ea9fbfb"><div class="ttname"><a href="class_ops_builder.html#ab9eda3e754f4dd51188fdba29ea9fbfb">OpsBuilder::OpsBuilderTypes</a></div><div class="ttdeci">OpsBuilderTypes</div><div class="ttdef"><b>Definition:</b> OpsBuilder.h:13</div></div>
-<div class="ttc" id="aclass_ops_builder_html_ab9eda3e754f4dd51188fdba29ea9fbfba89a293d02c03e4476b7553bdbca5d848"><div class="ttname"><a href="class_ops_builder.html#ab9eda3e754f4dd51188fdba29ea9fbfba89a293d02c03e4476b7553bdbca5d848">OpsBuilder::TypesByAdversary</a></div><div class="ttdeci">@ TypesByAdversary</div><div class="ttdef"><b>Definition:</b> OpsBuilder.h:15</div></div>
+<div class="ttc" id="aclass_ops_builder_html_a59c49e5abd3aae858a33e1286cdd9f99"><div class="ttname"><a href="class_ops_builder.html#a59c49e5abd3aae858a33e1286cdd9f99">OpsBuilder::Build</a></div><div class="ttdeci">Operation * Build() override</div></div>
+<div class="ttc" id="aclass_ops_builder_html_a5d8ded0987b330f21f5685ed18e446f3"><div class="ttname"><a href="class_ops_builder.html#a5d8ded0987b330f21f5685ed18e446f3">OpsBuilder::GetAdversary</a></div><div class="ttdeci">std::string GetAdversary()</div></div>
+<div class="ttc" id="aclass_ops_builder_html_a81c6df89cf5ea7da440d3f5ab20fdcbe"><div class="ttname"><a href="class_ops_builder.html#a81c6df89cf5ea7da440d3f5ab20fdcbe">OpsBuilder::SetOpType</a></div><div class="ttdeci">void SetOpType(std::string type)</div></div>
+<div class="ttc" id="aclass_ops_builder_html_a9d69782eb5c2523bd60e80a704040870"><div class="ttname"><a href="class_ops_builder.html#a9d69782eb5c2523bd60e80a704040870">OpsBuilder::SetOpType</a></div><div class="ttdeci">void SetOpType(op_types type)</div></div>
+<div class="ttc" id="aclass_ops_builder_html_aa38c7b0751d71b674c2ba68e9db034f6"><div class="ttname"><a href="class_ops_builder.html#aa38c7b0751d71b674c2ba68e9db034f6">OpsBuilder::GetOpType</a></div><div class="ttdeci">op_types GetOpType()</div></div>
+<div class="ttc" id="aclass_ops_builder_html_ae919c7922be8a08fce822982176c424c"><div class="ttname"><a href="class_ops_builder.html#ae919c7922be8a08fce822982176c424c">OpsBuilder::SetNotes</a></div><div class="ttdeci">void SetNotes(std::string notes)</div></div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>

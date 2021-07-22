@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['uiobject_21',['UIObject',['../class_u_i_object.html',1,'']]]
+  ['permissionobject_37',['PermissionObject',['../class_permission_object.html',1,'']]]
 ];
