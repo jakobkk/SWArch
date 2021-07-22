@@ -1,0 +1,69 @@
+\hypertarget{class_observer}{}\doxysection{Observer Class Reference}
+\label{class_observer}\index{Observer@{Observer}}
+
+
+{\ttfamily \#include $<$Observer.\+h$>$}
+
+\doxysubsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+enum \mbox{\hyperlink{class_observer_ac13347539c971c78fff70b064c68be0a}{Observer\+Types}} \{ \mbox{\hyperlink{class_observer_ac13347539c971c78fff70b064c68be0aaff10ffdbc12d0b0488a5f163eed36fae}{Invalid\+Action}}
+, \mbox{\hyperlink{class_observer_ac13347539c971c78fff70b064c68be0aac49778adba2ba23847883ff8d697b71b}{Suspescious\+Action}}
+, \mbox{\hyperlink{class_observer_ac13347539c971c78fff70b064c68be0aa762cb6cd00cd5bc9d4faf689d174eebf}{Illegal\+Action}}
+, \mbox{\hyperlink{class_observer_ac13347539c971c78fff70b064c68be0aa19933c82c5f5dd4e992243772bab8f6e}{Create}}
+ \}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Observe user behavior to monitor and audit. This will be used for keeping track of every \char`\"{}out of bounds\char`\"{} thing a user may do
+\begin{DoxyItemize}
+\item Things may include\+:
+\begin{DoxyEnumerate}
+\item Valid actions not part of normal workflow
+\item Invalid actions
+\item Suspecious actions
+\item Blatantly illegal actions
+\end{DoxyEnumerate}
+\end{DoxyItemize}
+
+The subject of the observer will be going at once, with overlap\+: operation time, user session, and user lifetime session This should only be viewable by an auditor or the highest level admin 
+
+Definition at line 17 of file Observer.\+h.
+
+
+
+\doxysubsection{Member Enumeration Documentation}
+\mbox{\Hypertarget{class_observer_ac13347539c971c78fff70b064c68be0a}\label{class_observer_ac13347539c971c78fff70b064c68be0a}} 
+\index{Observer@{Observer}!ObserverTypes@{ObserverTypes}}
+\index{ObserverTypes@{ObserverTypes}!Observer@{Observer}}
+\doxysubsubsection{\texorpdfstring{ObserverTypes}{ObserverTypes}}
+{\footnotesize\ttfamily enum \mbox{\hyperlink{class_observer_ac13347539c971c78fff70b064c68be0a}{Observer\+::\+Observer\+Types}}}
+
+\begin{DoxyEnumFields}{Enumerator}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{InvalidAction@{InvalidAction}!Observer@{Observer}}\index{Observer@{Observer}!InvalidAction@{InvalidAction}}}\mbox{\Hypertarget{class_observer_ac13347539c971c78fff70b064c68be0aaff10ffdbc12d0b0488a5f163eed36fae}\label{class_observer_ac13347539c971c78fff70b064c68be0aaff10ffdbc12d0b0488a5f163eed36fae}} 
+Invalid\+Action&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{SuspesciousAction@{SuspesciousAction}!Observer@{Observer}}\index{Observer@{Observer}!SuspesciousAction@{SuspesciousAction}}}\mbox{\Hypertarget{class_observer_ac13347539c971c78fff70b064c68be0aac49778adba2ba23847883ff8d697b71b}\label{class_observer_ac13347539c971c78fff70b064c68be0aac49778adba2ba23847883ff8d697b71b}} 
+Suspescious\+Action&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{IllegalAction@{IllegalAction}!Observer@{Observer}}\index{Observer@{Observer}!IllegalAction@{IllegalAction}}}\mbox{\Hypertarget{class_observer_ac13347539c971c78fff70b064c68be0aa762cb6cd00cd5bc9d4faf689d174eebf}\label{class_observer_ac13347539c971c78fff70b064c68be0aa762cb6cd00cd5bc9d4faf689d174eebf}} 
+Illegal\+Action&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{Create@{Create}!Observer@{Observer}}\index{Observer@{Observer}!Create@{Create}}}\mbox{\Hypertarget{class_observer_ac13347539c971c78fff70b064c68be0aa19933c82c5f5dd4e992243772bab8f6e}\label{class_observer_ac13347539c971c78fff70b064c68be0aa19933c82c5f5dd4e992243772bab8f6e}} 
+Create&\\
+\hline
+
+\end{DoxyEnumFields}
+
+
+Definition at line 19 of file Observer.\+h.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{_observer_8h}{Observer.\+h}}\end{DoxyCompactItemize}
