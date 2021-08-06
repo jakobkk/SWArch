@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project>
+  <ProjectOutputs>
+    <ProjectOutput>
+      <FullPath>C:\Users\ericl\Downloads\SWArch\x64\Debug\SystemsLibrary.dll</FullPath>
+    </ProjectOutput>
+    <ProjectOutput>
+      <FullPath>C:\Users\ericl\Downloads\SWArch\x64\Debug\Core.dll</FullPath>
+    </ProjectOutput>
+    <ProjectOutput>
+      <FullPath>C:\Users\ericl\Downloads\SWArch\x64\Debug\LoggingLibrary.dll</FullPath>
+    </ProjectOutput>
+    <ProjectOutput>
+      <FullPath>C:\Users\ericl\Downloads\SWArch\x64\Debug\PermissionsLibrary.dll</FullPath>
+    </ProjectOutput>
+    <ProjectOutput>
+      <FullPath>C:\Users\ericl\Downloads\SWArch\x64\Debug\CommonAppLibrary.dll</FullPath>
+    </ProjectOutput>
+    <ProjectOutput>
+      <FullPath>C:\Users\ericl\Downloads\SWArch\x64\Debug\APILibrary.dll</FullPath>
+    </ProjectOutput>
+    <ProjectOutput>
+      <FullPath>C:\Users\ericl\Downloads\SWArch\x64\Debug\COCUI.exe</FullPath>
+    </ProjectOutput>
+  </ProjectOutputs>
+  <ContentFiles />
+  <SatelliteDlls />
+  <NonRecipeFileRefs />
+</Project>

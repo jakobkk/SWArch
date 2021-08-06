@@ -1,10 +1,1 @@
-﻿  AutomationBinding.cpp
-  Part.cpp
-C:\Users\jakob\Desktop\SWArch\SWArch\AppLibrary\PartOps.h(17,15): warning C4251: 'PartFile::m_partFilePath': class 'std::basic_string<char,std::char_traits<char>,std::allocator<char>>' needs to have dll-interface to be used by clients of class 'PartFile'
-C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\VC\Tools\MSVC\14.29.30037\include\xstring(4905): message : see declaration of 'std::basic_string<char,std::char_traits<char>,std::allocator<char>>'
-  Session.cpp
-C:\Users\jakob\Desktop\SWArch\SWArch\AppLibrary\PartOps.h(17,15): warning C4251: 'PartFile::m_partFilePath': class 'std::basic_string<char,std::char_traits<char>,std::allocator<char>>' needs to have dll-interface to be used by clients of class 'PartFile'
-C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\VC\Tools\MSVC\14.29.30037\include\xstring(4905): message : see declaration of 'std::basic_string<char,std::char_traits<char>,std::allocator<char>>'
-  dllmain.cpp
-  Generating Code...
-  AutomationBinding.vcxproj -> C:\Users\jakob\Desktop\SWArch\SWArch\x64\Debug\AUTOMATIONBINDING.dll
+﻿

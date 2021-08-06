@@ -9,6 +9,7 @@ class APPLIBRARY_API PartFile : public GuidObject
 {
 	public:
 		static PartFile* CreatePartFile(std::string partFilePath);
+		static PartFile* GetPartFile(std::string partFilePath);
 		void SavePart();
 		void MakeWidgetFeature(bool option1, int values);
 
@@ -18,6 +19,7 @@ class APPLIBRARY_API PartFile : public GuidObject
 };
 
 extern APPLIBRARY_API PartFile* Journaling_MakePart(std::string);
+extern APPLIBRARY_API PartFile* Journaling_GetPart(std::string);
 
 extern APPLIBRARY_API void Journaling_Part_Save(PartFile* partFile);
 

@@ -22,6 +22,8 @@ namespace AutomationAPI
 
 			static Part* CreatePart(int guid);
 
+			static Part* OpenPart(std::string path);
+
 			virtual ~Part();
 
 		private:

@@ -26,6 +26,28 @@ PartFile* Journaling_MakePart(std::string partFilePath)
 
 }
 
+static PartFile* GetPartFile(std::string partFilePath)
+{
+	//If Journaling write the thing things
+	if (IsJournaling())
+	{
+		JournalStartCall("GetPart", JournalCallData::CannedGlobals::SESSION);
+		JournalStringInParam(partFilePath, "partFilePath");
+	}
+	PartFile* retVal = nullptr;
+	retVal = PartFile::GetPartFile(partFilePath);
+
+	if (IsJournaling())
+	{
+		JournalReturnClass(retVal, "AutomationAPI::Part", "Part");
+		JournalEndCall();
+	}
+
+	return retVal;
+
+}
+
+
 void Journaling_Part_Save(PartFile* partFile)
 {
 

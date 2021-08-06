@@ -30,6 +30,25 @@ AutomationAPI::Part* AutomationAPI::Session::MakePart(std::string partFilePath)
 	return AutomationAPI::Part::CreatePart(guid);
 }
 
+AutomationAPI::Part* AutomationAPI::Session::WorkPart()
+{
+	return this->currentPart;
+}
+
+AutomationAPI::Part* AutomationAPI::Session::OpenPart(std::string partFilePath)
+{
+	PartFile* partFile = Journaling_GetPart(partFilePath);
+
+	int guid = partFile->GetGuid();
+
+	return AutomationAPI::Part::CreatePart(guid);
+
+}
+
+AutomationAPI::Part* AutomationAPI::Session::GetPart(std::string partFilePath)
+{
+	return OpenPart(partFilePath);
+}
 
 AutomationAPI::Session::~Session()
 {
