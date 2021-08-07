@@ -1,4 +1,3 @@
-#pragma once
 // The following ifdef block is the standard way of creating macros which make exporting
 // from a DLL simpler. All files within this DLL are compiled with the COMMONAPPLIBRARY_EXPORTS
 // symbol defined on the command line. This symbol should not be defined on any project
@@ -22,9 +21,6 @@ extern COMMONAPPLIBRARY_API int nCommonAppLibrary;
 
 COMMONAPPLIBRARY_API int fnCommonAppLibrary(void);
 
-#include "../LoggingLibrary/LoggingLibrary.h"
-#include "../PermissionsLibrary/PermissionsLibrary.h"
-#include "../Core/Core.h"
 #include <boost/locale.hpp>
 using namespace boost::locale;
 
@@ -39,8 +35,6 @@ enum COMMONAPPLIBRARY_API op_types {
 class COMMONAPPLIBRARY_API Operation
 {
 public:
-	PermissionObject* per;
-	Logging* log;
 
 	Operation();
 	Operation(std::string op);
@@ -55,7 +49,7 @@ public:
 	void set_adversary(std::string incoming_adversary);
 	std::string get_adversary();
 	void print_info();
-	Node create_operation_node();
+	//Node create_operation_node();
 
 private:
 	op_types op_type;

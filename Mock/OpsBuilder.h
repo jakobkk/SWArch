@@ -1,13 +1,11 @@
 #pragma once
 
-#include "CommonAppLibrary.h"
-
+#include "IBuilder.h"
 #include "Network.h"
-
 /**
  * <summary>Build up an [Operation](@ref Operation) by seperately adding adversary, operation type and notes</summary>
  */
-class COMMONAPPLIBRARY_API OpsBuilder // : public IBuilder
+class COMMONAPPLIBRARY_API OpsBuilder : public IBuilder
 {
 
 public:
@@ -29,10 +27,17 @@ public:
 	/** Keep track of detailed notes of the operation */
 	std::string GetNotes();
 
-	Network *GetNetwork();
-	void SetNetwork(Network *network);
+	/** Set the network the opeartion will use */
+	void SetNetwork(Network network);
+	/** Keep track of the operation's network */
+	Network GetNetwork();
 
 	OpsBuilder();
+
+	void* Build() override; 
+	Node* BuildNode() override; 
+
 private:
-	Network *network;
+	/** Network the opeartion will use */
+	Network network;
 };

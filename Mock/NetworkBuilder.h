@@ -1,13 +1,13 @@
 #pragma once
 
-#include "CommonAppLibrary.h"
+#include "IBuilder.h"
 #include <vector>
-#include "Network.h"
+
 
 /**
  * <summary>Create a [Network](@ref Network) using extra end points, extra connections, or for a specific mission based on enum</summary>
  */
-class COMMONAPPLIBRARY_API NetworkBuilder //: public IBuilder
+class COMMONAPPLIBRARY_API NetworkBuilder : public IBuilder
 {
 
 public:
@@ -109,7 +109,9 @@ public:
 	/** Keep track of detailed notes for the network */
 	std::string GetNotes();
 
-	NetworkBuilder();
+	void* Build() override;
+	Node* BuildNode() override;
+
 
 private:
 	/** Number of hosts required for the network */

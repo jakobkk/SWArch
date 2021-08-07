@@ -1,5 +1,5 @@
 #pragma once
-#include "CommonAppLibrary.h"
+#include "NetworkBuilder.h"
 
 class COMMONAPPLIBRARY_API Network
 {
@@ -28,11 +28,12 @@ public:
 	 * \return 0 if success, errno otherwise
 	 */
 	int NetworkScan();
+	
+	Network();
 
 	virtual ~Network();
 
 private:
-	Network();
 	int totalUsers;
 	int totalHosts;
 	int totalConnections;
