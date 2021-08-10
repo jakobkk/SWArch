@@ -159,6 +159,8 @@ LRESULT CALLBACK WndProc(HWND hWnd, UINT message, WPARAM wParam, LPARAM lParam)
             case IDM_EXIT:
                 DestroyWindow(hWnd);
                 break;
+            case ID_FILE_EXECUTEBINARY:
+                break;
                 /*
 #define ID_FILE_FIXOILPIPELINE          32773
 #define ID_FILE_VERIFYELECTION          32774

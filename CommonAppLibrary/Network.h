@@ -29,7 +29,7 @@ public:
 	 */
 	int NetworkScan();
 
-	virtual ~Network();
+	~Network();
 
 private:
 	Network();
