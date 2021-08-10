@@ -39,6 +39,7 @@
   </PropertyGroup>
   <ItemGroup>
     <ClInclude Include="MockNetwork.h" />
+    <ClInclude Include="MockNetworkBuilder.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="..\..\..\..\..\Downloads\Mocks2\Mocks2\packages\gmock.1.10.0\lib\native\src\gtest\src\gtest_main.cc" />

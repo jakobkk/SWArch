@@ -2,6 +2,7 @@
 #include "gtest/gtest.h"
 #include "gmock/gmock.h"
 #include "MockNetwork.h"
+#include "MockNetworkBuilder.h"
 #include "../CommonAppLibrary/OpsBuilder.h"
 
 class MockTest {
@@ -36,9 +37,20 @@ TEST(OpsBuilderTest, GetSetNetwork) {
 
 using ::testing::_;
 TEST(NetworkTest, ConnectHostsTest) {
-    MockNetwork network = MockNetwork();
-    EXPECT_CALL(network, ConnectHosts(_,_,_)).Times(5).WillRepeatedly(Return(0));
+    MockNetworkBuilder builder = MockNetworkBuilder();
+    int routerCount = 2;
 
+    EXPECT_CALL(builder, SetHostCount(_)).Times(1);
+    EXPECT_CALL(builder, SetRouterCount(_)).Times(1);
+    EXPECT_CALL(builder, GetRouterCount()).Times(1).WillOnce(Return(routerCount));
+    EXPECT_CALL(builder, SetNotes(_)).Times(1);
+
+    builder.SetHostCount(2);
+    builder.SetRouterCount(routerCount);
+    builder.GetRouterCount();
+    builder.SetNotes("Some notes about the op");
+
+    Network network = Network(builder);
     EXPECT_EQ(network.ConnectHosts(0, 0, 0), 0);
     EXPECT_EQ(network.ConnectHosts(1, 2, 3), 0);
     EXPECT_EQ(network.ConnectHosts(100, 200, 300), 0);
@@ -48,19 +60,23 @@ TEST(NetworkTest, ConnectHostsTest) {
 }
 
 TEST(NetworkTest, NetworkScanTest) {
-    MockNetwork network = MockNetwork();
-    EXPECT_CALL(network, NetworkScan()).Times(5).WillOnce(Return(1)).WillOnce(Return(2)).WillRepeatedly(Return(0));
+    MockNetworkBuilder builder = MockNetworkBuilder();
+    int userCount = 5;
 
-    EXPECT_EQ(network.NetworkScan(), 1);
+    EXPECT_CALL(builder, SetHostCount(_)).Times(1);
+    EXPECT_CALL(builder, SetRouterCount(_)).Times(1);
+    EXPECT_CALL(builder, SetUserCount(_)).Times(1);
+    EXPECT_CALL(builder, GetUserCount()).Times(1).WillOnce(Return(userCount));
+    EXPECT_CALL(builder, SetNotes(_)).Times(1);
 
-    ON_CALL(network, ConnectHosts(_, _, _)).WillByDefault(Return(0));
+    builder.SetHostCount(4);
+    builder.SetRouterCount(2);
+    builder.SetUserCount(userCount);
+    builder.GetUserCount();
+    builder.SetNotes("Some more notes about this other op");
 
-    EXPECT_EQ(network.NetworkScan(), 2);
+    Network network = Network(builder);
 
-    ON_CALL(network, MarkOperational()).WillByDefault(Return(0));
-
-    EXPECT_EQ(network.NetworkScan(), 0);
-    EXPECT_EQ(network.NetworkScan(), 0);
     EXPECT_EQ(network.NetworkScan(), 0);
 
 }
