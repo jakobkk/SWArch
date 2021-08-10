@@ -29,10 +29,10 @@ public:
 	 */
 	int NetworkScan();
 
+	Network();
 	~Network();
 
 private:
-	Network();
 	int totalUsers;
 	int totalHosts;
 	int totalConnections;

@@ -24,20 +24,20 @@ TEST(TestCaseName, TestNameTrue) {
 using ::testing::Return;
 using ::testing::StrictMock;
 TEST(OpsBuilderTest, GetSetNetwork) {
-    StrictMock<MockNetwork> network;
-    OpsBuilder *builder = &OpsBuilder();
+    MockNetwork network;
+    OpsBuilder builder = OpsBuilder();
 
-    EXPECT_CALL(network, ConnectHosts(1,2,3));
-    EXPECT_CALL(network, MarkOperational());
+    EXPECT_CALL(network, ConnectHosts(1,2,3)).Times(1);
+    EXPECT_CALL(network, MarkOperational()).Times(1);
 
-    builder->SetNetwork(&network);
-    Network *return_network = builder->GetNetwork();
-    EXPECT_EQ(return_network, network);
+    builder.SetNetwork(&network);
+    Network *return_network = builder.GetNetwork();
+    EXPECT_EQ(return_network, &network);
 }
 
 using ::testing::_;
 TEST(NetworkTest, ConnectHostsTest) {
-    MockNetworkBuilder builder = MockNetworkBuilder();
+    MockNetworkBuilder builder;
     int routerCount = 2;
 
     EXPECT_CALL(builder, SetHostCount(_)).Times(1);
@@ -60,7 +60,7 @@ TEST(NetworkTest, ConnectHostsTest) {
 }
 
 TEST(NetworkTest, NetworkScanTest) {
-    MockNetworkBuilder builder = MockNetworkBuilder();
+    MockNetworkBuilder builder;
     int userCount = 5;
 
     EXPECT_CALL(builder, SetHostCount(_)).Times(1);

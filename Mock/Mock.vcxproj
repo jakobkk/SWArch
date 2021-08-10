@@ -42,7 +42,9 @@
     <ClInclude Include="MockNetworkBuilder.h" />
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="..\..\..\..\..\Downloads\Mocks2\Mocks2\packages\gmock.1.10.0\lib\native\src\gtest\src\gtest_main.cc" />
+    <ClCompile Include="..\packages\gmock.1.10.0\lib\native\src\gtest\src\gtest_main.cc" />
+    <ClCompile Include="MockNetwork.cpp" />
+    <ClCompile Include="MockNetworkBuilder.cpp" />
     <ClCompile Include="test.cpp" />
   </ItemGroup>
   <ItemGroup>

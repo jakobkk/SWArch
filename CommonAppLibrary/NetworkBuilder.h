@@ -110,6 +110,7 @@ public:
 	std::string GetNotes();
 
 	NetworkBuilder();
+	~NetworkBuilder();
 
 private:
 	/** Number of hosts required for the network */

@@ -4,7 +4,7 @@
 
 class MockNetworkBuilder : public Network {
 public:
-	MockNetworkBuilder();
+//	MockNetworkBuilder();
 	MOCK_METHOD1(SetType, void(NetworkBuilder type));
 	MOCK_METHOD0(GetType, NetworkBuilder());
 	MOCK_METHOD1(SetHostCount, void(int count));
